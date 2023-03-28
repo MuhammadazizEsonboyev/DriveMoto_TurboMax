@@ -26,10 +26,10 @@ const Bfooter = () => {
         <Row className='mt-5'>
           <Col xs={3}>
             <Card style={{ width: '18rem', textAlign: 'center' }}>
-              <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-heart"></i>
               <Card.Img variant="top" src={kalonka} alt='' className='kalonb' />
               <Card.Body>
-                <Card.Title className='bcardtex'>BRP Audio-портативная система</Card.Title>
+                <Card.Title className='bcardtex'>BRP Audio-портативна система</Card.Title>
                 <Card.Text className='bsamlte'> нет в наличии </Card.Text>
               </Card.Body>
               <Card.Body>
@@ -40,6 +40,7 @@ const Bfooter = () => {
 
           <Col xs={3}>
             <Card style={{ width: '18rem', textAlign: 'center' }}>
+
               <i class="fa-regular fa-heart"></i>
               <Card.Img variant="top" src={sensor} alt='' className='kalonb' />
               <Card.Body>
@@ -51,6 +52,7 @@ const Bfooter = () => {
 
           <Col xs={3}>
             <Card style={{ width: '18rem', textAlign: 'center' }}>
+
               <i class="fa-regular fa-heart"></i>
               <Card.Img variant="top" src={purjina} alt='' className='purjina' />
               <Card.Body>
@@ -65,6 +67,7 @@ const Bfooter = () => {
 
           <Col xs={3}>
             <Card style={{ width: '18rem', textAlign: 'center' }}>
+
               <i class="fa-regular fa-heart"></i>
               <Card.Img variant="top" src={dresb} alt='' className='dresb' />
               <Card.Body>
