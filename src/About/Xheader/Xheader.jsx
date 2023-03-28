@@ -1,47 +1,45 @@
-import React from 'react'
-import { Col, Container, Nav, Navbar, Row } from 'react-bootstrap'
-import "./Xheader.css"
+import React from "react";
+import { Col, Container, Nav, Navbar, Row } from "react-bootstrap";
+import "./Xheader.css";
 
 export default function Xheader() {
   return (
     <>
-     <Container>
-      <Row>
-        <Col>
-       <div className='section_xurshid'>
-        <Navbar bg="secondary"  variant="dark">
-          
-       <Container>
-          {/* <Nav className="me-auto"> */}
-            <Nav.Link >О товаре</Nav.Link>
-            <Nav.Link>Характеристики</Nav.Link>
-            <Nav.Link >Отзывы</Nav.Link>
-            <Nav.Link >Самовывоз</Nav.Link>
-            <Nav.Link >Доставка</Nav.Link>
-            <Nav.Link >Cервис</Nav.Link>
-            <Nav.Link >Гарантия</Nav.Link>
+      <section className="xurshid">
+        <Container>
+          <Row>
+            <Col>
+              <div className="section_xurshid">
+                <Navbar bg="secondary" variant="dark">
+                  <Container>
+                    {/* <Nav className="me-auto"> */}
+                    <Nav.Link>О товаре</Nav.Link>
+                    <Nav.Link>Характеристики</Nav.Link>
+                    <Nav.Link>Отзывы</Nav.Link>
+                    <Nav.Link>Самовывоз</Nav.Link>
+                    <Nav.Link>Доставка</Nav.Link>
+                    <Nav.Link>Cервис</Nav.Link>
+                    <Nav.Link>Гарантия</Nav.Link>
 
-
-          {/* </Nav> */}
+                    {/* </Nav> */}
+                  </Container>
+                </Navbar>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={6}>
+              <h6>Магазин</h6>
+            </Col>
+            <Col xs={6}>
+              <h1>d</h1>
+            </Col>
+          </Row>
         </Container>
-      </Navbar>
-       </div>
-        </Col>
-      </Row>
-      <Row>
-        <h1>red</h1>
-      </Row>
-
-
-     </Container>
-    
+      </section>
     </>
-  )
+  );
 }
-
-
-
-
 
 // import React, { useState } from "react";
 // import { Col, Container, Form, Row, Table } from "react-bootstrap";

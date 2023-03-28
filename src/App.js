@@ -1,14 +1,12 @@
-import React from "react";
+
+      
 import Xheader from "./About/Xheader/Xheader";
-
-// import 'bootstrap/dist/css/bootstrap.min.css';
-
+// import AppOne from "./Home/AppOne";
 function App() {
   return (
    <>
-   
-   <Xheader/>
-      
+      {/* <AppOne/> */}
+      <Xheader/>
    </>
   );
 }
