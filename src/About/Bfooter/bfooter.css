@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.listb {
+    list-style: none;
+    display: flex;
+}
+
+.list_itemb {
+    margin-top: 15px;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 18px;
+    margin-right: 70px;
+}
+
+.hbirbex {
+    margin-top: 50px;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+}
