@@ -101,7 +101,7 @@ const Bfooter = () => {
                     <li className='mgshopb'>Доставка и самовывоз</li>
                     <li className='mgshopb'>Оплата</li>
                     <li className='mgshopb'>Возврат-обмен</li>
-                    <li className='mgshopb'>Новости</li>
+                    <li className='mgshopb'>Новостии</li>
                 </ul>
             </Col>
             <Col >
