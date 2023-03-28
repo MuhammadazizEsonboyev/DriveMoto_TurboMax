@@ -1,10 +1,10 @@
 import React from 'react'
-import Dfooter from './Dfooter/Dfooter'
+import Bfooter from './Bfooter/Bfooter'
 
 export default function AppThree() {
   return (
     <>
-    <Dfooter/>
+    <Bfooter/>
     </>
   )
 }
