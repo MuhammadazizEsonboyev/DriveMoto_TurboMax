@@ -1,0 +1,10 @@
+@media (max-width:575px) {
+    body{
+        background: red;
+    }
+
+    .section_xurshid{
+        display: grid;
+    }
+    
+}
