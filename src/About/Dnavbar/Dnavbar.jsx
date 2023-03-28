@@ -2,7 +2,9 @@ import React from 'react'
 
 const Dnavbar = () => {
   return (
-    <div>Dnavbar</div>
+    <div>
+      doston
+    </div>
   )
 }
 
