@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Container, Nav, Navbar, Row } from "react-bootstrap";
+
 import "./Xheader.css";
 
 export default function Xheader() {
@@ -10,9 +11,8 @@ export default function Xheader() {
           <Row>
             <Col>
               <div className="section_xurshid">
-                <Navbar bg="secondary" variant="dark">
+                <Navbar className="xurshid_nav">
                   <Container>
-                    {/* <Nav className="me-auto"> */}
                     <Nav.Link>О товаре</Nav.Link>
                     <Nav.Link>Характеристики</Nav.Link>
                     <Nav.Link>Отзывы</Nav.Link>
@@ -20,8 +20,6 @@ export default function Xheader() {
                     <Nav.Link>Доставка</Nav.Link>
                     <Nav.Link>Cервис</Nav.Link>
                     <Nav.Link>Гарантия</Nav.Link>
-
-                    {/* </Nav> */}
                   </Container>
                 </Navbar>
               </div>
@@ -29,11 +27,44 @@ export default function Xheader() {
           </Row>
           <Row>
             <Col xs={6}>
-              <h6>Магазин</h6>
+              <div className="xurshid_input">
+                <h6 className="xurshid_h6">Магазин</h6>
+                <input
+                  type="text"
+                  className="xurshid_input_input"
+                  placeholder="Введите название магазина"
+                />
+              </div>
             </Col>
-            <Col xs={6}>
-              <h1>d</h1>
+            <Col xs={2}>
+              <div className="div_xurshid_1">
+                <input type="radio" name="b" />
+                <h6 className="xurshid1_h6">Забрать сегодня</h6>
+              </div>
             </Col>
+            <Col xs={3}>
+              <div className="div_xurshid_2">
+                <input type="radio" name="b" />
+                <h6 className="xurshid2_h6">Забрать в течение недели</h6>
+              </div>
+            </Col>
+          </Row>
+          <Row  className="mt-5">
+            {/* <div className="xurshid_section"> */}
+             <Col xs={3}>
+              <h5>Адрес</h5>
+             </Col>
+             <Col xs={3}>
+              <h5>Режим работы</h5>
+             </Col>
+             <Col xs={2}>
+              <h5>Доступно</h5>
+             </Col>
+             <Col xs={2}>
+              <h5>Доступно</h5>
+             </Col>
+            
+            {/* </div> */}
           </Row>
         </Container>
       </section>
