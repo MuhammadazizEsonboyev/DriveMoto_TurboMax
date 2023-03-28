@@ -48,6 +48,82 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
+    text-align: center;
+}
+
+.fa-regular {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 240px;
+}
+
+.brublte {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    /* identical to box height */
+
+    text-align: center;
+
+}
+
+.bdtex {
+    text-align: center;
+}
+
+.yetirub {
+    margin-top: 40px;
+
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    /* identical to box height */
+
+    text-align: center;
+
+}
+
+.mmkiyimb {
+    text-align: center;
+}
+
+.rafab {
+    text-align: center;
+}
+
+.netnalichb {
+    margin-top: 34px;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+
+}
+
+.plusb {
+    text-align: center;
+}
+
+.rubab {
+    margin-top: 40px;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    /* identical to box height */
+
+    text-align: center;
+}
+
+.dresb {
+
     text-align: center; 
 }
 
@@ -123,8 +199,94 @@ text-align: center;
 }
 
 .dresb{
+
     width: 190px;
     margin: auto;
+}
+
+
+.purjina {
+    width: 180px;
+    margin: auto;
+}
+
+.foterb {
+    background-color: #F0F0F4;
+    margin-top: 107px;
+}
+
+.holtib {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 42.11px;
+}
+
+.footinb{
+    padding: 5px 10px;
+    width: 170px;
+    border: none;
+    margin-bottom: 89px;
+    margin-top: 37px;
+}
+
+.butfotb{
+    background-color: #1C62CD;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    margin-bottom: 89px;
+
+    margin-top: 37px;
+}
+
+.list_itmftb{
+    margin-top: 43px;
+    margin-left: 100px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.listftb{
+    padding-top: 5px;
+}
+
+#infob{
+    color: black;
+    font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+}
+
+.lasftbmag{
+    list-style: none;
+    text-decoration: none;
+    margin-top: 43px;
+}
+
+#mgagash{
+    font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+}
+
+.mgshopb{
+    padding-top: 5px;
+}
+
+.fa-brands{
+    padding-left: 20px;
+    font-size: 35px;
+}
+
+.iconsfoterb{
+    margin-top: 86px;
 }
 
 .purjina{
