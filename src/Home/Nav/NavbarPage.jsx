@@ -8,6 +8,10 @@ import Card from './image/Card.svg'
 import ModalNav from './Modal'
 import { products } from "././DataName";
 import Carousel from 'react-bootstrap/Carousel';
+import RubleFirst from './image/icons8-рубль-50.svg'
+import RubleSec from './image/icons8-рубль-50 (1).svg'
+import engine from './image/engine.svg'
+import { motion } from "framer-motion"
 
 
 
@@ -25,7 +29,19 @@ export default function navbarPage() {
           </Col>
 
           <Col xs={2}>
-            <img src={logo} alt="svg" id='logo' />
+            <motion.img src={logo} alt="svg" id='logo'
+              initial={{
+                x: 100,
+                opacity: 0
+              }}
+              animate={{
+                x: 0,
+                opacity: 1
+              }}
+              transition={{
+                delay: 0.5
+              }}
+            />
           </Col>
 
           <Col xs={5}>
@@ -34,9 +50,13 @@ export default function navbarPage() {
               <h4 id='nav-adress' >Москва,  ул. Науки  25</h4>
 
               <div id='profile-box'>
-                <img src={Like} alt="" />
+                <img src={Like} alt=""
+
+                />
+
                 <ModalNav />
-                <img src={Card} alt="" />
+                <img src={Card} alt=""
+                />
               </div>
             </div>
           </Col>
@@ -66,12 +86,12 @@ export default function navbarPage() {
       <div id="advertisement-box">
         <Container>
           <Row>
-            <Col xs={8}>
+            <Col xs={9}>
               <Carousel>
                 <Carousel.Item interval={3000}>
                   <img
-                    className="d-block w-100"
-                    src="holder.js/800x400?text=First slide&bg=373940"
+                    className="d-block img-carousel"
+                    src="https://thumbs.dreamstime.com/b/two-atv-riders-speed-race-forest-front-view-helmets-riding-quad-bike-extreme-sport-travelling-quadbike-offroad-adventure-129263028.jpg"
                     alt="First slide"
                   />
                   <Carousel.Caption>
@@ -80,29 +100,88 @@ export default function navbarPage() {
                 </Carousel.Item>
                 <Carousel.Item interval={3000}>
                   <img
-                    className="d-block w-100"
-                    src="holder.js/800x400?text=Second slide&bg=282c34"
+                    className="d-block img-carousel"
+                    src="https://thumbs.dreamstime.com/b/atv-woods-racing-15759004.jpg"
                     alt="Second slide"
                   />
                   <Carousel.Caption>
 
                   </Carousel.Caption>
                 </Carousel.Item>
+
                 <Carousel.Item>
                   <img
-                    className="d-block w-100"
-                    src="holder.js/800x400?text=Third slide&bg=20232a"
+                    className="d-block img-carousel"
+                    src="https://thumbs.dreamstime.com/b/atv-grassy-sand-dune-27806819.jpg"
                     alt="Third slide"
                   />
                   <Carousel.Caption>
-                    
+
+                  </Carousel.Caption>
+                </Carousel.Item>
+
+                <Carousel.Item>
+                  <img
+                    className="d-block img-carousel"
+                    src="https://thumbs.dreamstime.com/b/action-shot-sport-atv-vehicle-running-mud-track-98196655.jpg"
+                    alt="Third slide"
+                  />
+                  <Carousel.Caption>
+
+                  </Carousel.Caption>
+                </Carousel.Item>
+
+                <Carousel.Item>
+                  <img
+                    className="d-block img-carousel"
+                    src="https://thumbs.dreamstime.com/b/summer-offroad-adventure-atv-sand-quarry-male-rider-helmet-quad-bike-sandpit-129262519.jpg"
+                    alt="Third slide"
+                  />
+                  <Carousel.Caption>
+
                   </Carousel.Caption>
                 </Carousel.Item>
               </Carousel>
             </Col>
+
+            <Col xs={3}>
+              <motion.div
+                id='border-app'
+                initial={{
+                  x: 100,
+                  opacity: 0
+                }}
+                animate={{
+                  x: 0,
+                  opacity: 1
+                }}
+                transition={{
+                  delay: 0.5
+                }}
+              >
+
+                <div id='sale-box'>
+                  <button id='sale'>акция</button>
+                  <div id='prices'>
+                    <p id='nineteen'>190 000 <img src={RubleFirst} alt="" /></p>
+                  </div>
+                </div>
+                <p id='twenty'>225 000 <img src={RubleSec} id="RubleSec" alt="" /> </p>
+
+                <img src={engine} id="engine" alt="" />
+                <h1 id='engine-info'>Лодочный мотор
+                  Suzuki DF9.9BRS</h1>
+
+                <div id='date-box'>
+                  <h2 id='date-till'>Акция действует до</h2>
+                  <h1 id='date'>31.08.2020</h1>
+                </div>
+              </motion.div>
+            </Col>
           </Row>
         </Container>
       </div>
+
     </div >
   )
 }
