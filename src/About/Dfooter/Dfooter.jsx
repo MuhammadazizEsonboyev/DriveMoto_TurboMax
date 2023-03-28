@@ -2,7 +2,9 @@ import React from 'react'
 
 const Dfooter = () => {
   return (
-    <div>Dfooter</div>
+   <>
+   
+   </>
   )
 }
 
