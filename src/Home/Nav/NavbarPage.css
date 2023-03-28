@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#nav-market {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #2F3035;
+    padding: 30px 30px;
+}
+
+#Navbar-box {
+    display: flex;
+}
+
+#logo {
+    padding: 0px 30px;
+}
+
+#nav-adress {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #2F3035;
+    padding-right: 200px;
+    padding: 30px 0px;
+}
+
+#navigation-img {
+    margin: 0px 10px 10px 0px;
+}
+
+#profile-box {
+    margin: 20px 10px 10px 180px;
+}
+
+#nav-category-box {
+    background: #F0F0F4;
+}
+
+
+#category-box {
+    display: flex;
+    justify-content: center;
+}
+
+#category-name {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #2F3035;
+    padding: 10px 40px;
+    border: none;
+}
+
+#category-name:hover {
+    cursor: pointer;
+    border-bottom: 3px solid  #317def;
+    transition: 0.1s;
+    font-size: 24px;
+    color: #2F3035;
+}
