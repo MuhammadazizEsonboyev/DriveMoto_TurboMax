@@ -6,6 +6,7 @@
 .listb {
     list-style: none;
     display: flex;
+    gap: 40px;
 }
 
 .list_itemb {
@@ -15,16 +16,15 @@
     font-weight: 300;
     font-size: 17px;
     line-height: 18px;
-    margin-right: 70px;
 }
 
 .hbirbex {
-    margin-top: 50px;
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
     line-height: 30px;
+    color: #2F3035;
 }
 
 .kalonb {
@@ -124,81 +124,81 @@
 
 .dresb {
 
-    text-align: center; 
+    text-align: center;
 }
 
-.fa-regular{
+.fa-regular {
     font-size: 20px;
     margin-top: 10px;
-margin-left: 240px;
+    margin-left: 240px;
 }
 
-.brublte{
+.brublte {
     font-family: 'Barlow';
-font-style: normal;
-font-weight: 700;
-font-size: 30px;
-line-height: 36px;
-/* identical to box height */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    /* identical to box height */
 
-text-align: center;
+    text-align: center;
 
 }
 
-.bdtex{
+.bdtex {
     text-align: center;
 }
 
-.yetirub{
+.yetirub {
     margin-top: 40px;
-    
-font-family: 'Barlow';
-font-style: normal;
-font-weight: 700;
-font-size: 30px;
-line-height: 36px;
-/* identical to box height */
 
-text-align: center;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    /* identical to box height */
+
+    text-align: center;
 
 }
 
-.mmkiyimb{
+.mmkiyimb {
     text-align: center;
 }
 
-.rafab{
+.rafab {
     text-align: center;
 }
 
-.netnalichb{
+.netnalichb {
     margin-top: 34px;
     font-family: 'SF Pro Display';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 21px;
-text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
 
 }
 
-.plusb{
+.plusb {
     text-align: center;
 }
 
-.rubab{
+.rubab {
     margin-top: 40px;
     font-family: 'Barlow';
-font-style: normal;
-font-weight: 700;
-font-size: 30px;
-line-height: 36px;
-/* identical to box height */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    /* identical to box height */
 
-text-align: center;
+    text-align: center;
 }
 
-.dresb{
+.dresb {
 
     width: 190px;
     margin: auto;
@@ -224,7 +224,7 @@ text-align: center;
     margin-top: 42.11px;
 }
 
-.footinb{
+.footinb {
     padding: 5px 10px;
     width: 170px;
     border: none;
@@ -232,7 +232,7 @@ text-align: center;
     margin-top: 37px;
 }
 
-.butfotb{
+.butfotb {
     background-color: #1C62CD;
     color: white;
     padding: 5px 10px;
@@ -242,54 +242,54 @@ text-align: center;
     margin-top: 37px;
 }
 
-.list_itmftb{
+.list_itmftb {
     margin-top: 43px;
     margin-left: 100px;
     list-style: none;
     text-decoration: none;
 }
 
-.listftb{
+.listftb {
     padding-top: 5px;
 }
 
-#infob{
+#infob {
     color: black;
     font-family: 'SF Pro Display';
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 17px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
 }
 
-.lasftbmag{
+.lasftbmag {
     list-style: none;
     text-decoration: none;
     margin-top: 43px;
 }
 
-#mgagash{
+#mgagash {
     font-family: 'SF Pro Display';
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 17px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
 }
 
-.mgshopb{
+.mgshopb {
     padding-top: 5px;
 }
 
-.fa-brands{
+.fa-brands {
     padding-left: 20px;
     font-size: 35px;
 }
 
-.iconsfoterb{
+.iconsfoterb {
     margin-top: 86px;
 }
 
-.purjina{
+.purjina {
     width: 180px;
     margin: auto;
 }

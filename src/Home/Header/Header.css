@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&family=Open+Sans:wght@400;500;600;700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -20,12 +21,18 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    /* line-height: 24px; */
+    padding: 10px;
+    margin: 0;
     color: #2F3035;
-    padding: 10px 10px 10px 10px;
+    transition: .8s;
+    -webkit-transition: .8s;
+    -moz-transition: .8s;
+    -ms-transition: .8s;
+    -o-transition: .8s;
 }
 
 #search:hover {
+    transition: .8s;
     color: #2F3035;
 }
 
@@ -33,13 +40,22 @@ body {
 #search-box {
     background-color: #ffff;
     border: none;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
 }
 
 #search-box:hover {
     background: #F0F0F4;
     border-radius: 5px;
     cursor: pointer;
-    /* padding: 0px 20px; */
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
 }
 
 #inp-box {
@@ -52,11 +68,13 @@ body {
 
 #search-btn {
     position: absolute;
-    margin-left: 1165px;
+    right: 0;
     padding: 13px 40px;
     background: #1C62CD;
     border-radius: 3px;
     border: none;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 #mark {
@@ -64,6 +82,10 @@ body {
     position: absolute;
     padding: 5px 10px;
     width: 100%;
+    background: #F0F0F4;
+    border-radius: 3px;
+    outline: none;
+    border: none;
 }
 
 
@@ -113,6 +135,7 @@ body {
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
+    cursor: pointer;
     line-height: 28px;
     color: #2F3035;
     padding: 20px 20px 0px 20px;
