@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&family=Open+Sans:wght@400;500;600;700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
 }
 
 #search-main-box {
@@ -11,16 +18,21 @@
 }
 
 #search {
-    font-family: 'SF Pro Display';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: 24px;
+    padding: 10px;
+    margin: 0;
     color: #2F3035;
-    padding: 10px 10px 10px 10px;
+    transition: .8s;
+    -webkit-transition: .8s;
+    -moz-transition: .8s;
+    -ms-transition: .8s;
+    -o-transition: .8s;
 }
 
 #search:hover {
+    transition: .8s;
     color: #2F3035;
 }
 
@@ -28,13 +40,22 @@
 #search-box {
     background-color: #ffff;
     border: none;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
 }
 
 #search-box:hover {
     background: #F0F0F4;
     border-radius: 5px;
     cursor: pointer;
-    /* padding: 0px 20px; */
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
 }
 
 #inp-box {
@@ -47,11 +68,13 @@
 
 #search-btn {
     position: absolute;
-    margin-left: 1165px;
+    right: 0;
     padding: 13px 40px;
     background: #1C62CD;
     border-radius: 3px;
     border: none;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 #mark {
@@ -59,6 +82,10 @@
     position: absolute;
     padding: 5px 10px;
     width: 100%;
+    background: #F0F0F4;
+    border-radius: 3px;
+    outline: none;
+    border: none;
 }
 
 
@@ -95,7 +122,6 @@
 }
 
 #about {
-    font-family: 'SF Pro Display';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -106,10 +132,10 @@
 }
 
 #model-name {
-    font-family: 'Barlow';
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
+    cursor: pointer;
     line-height: 28px;
     color: #2F3035;
     padding: 20px 20px 0px 20px;
@@ -120,14 +146,13 @@
 }
 
 #model-info {
-    font-family: 'Barlow';
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     padding-left: 20px;
 }
 
-#thirdImg{
+#thirdImg {
     width: 190px;
     height: 130px;
     margin: 30px 0px 0px 50px;
@@ -141,12 +166,13 @@
     height: 140px;
 }
 
-#fourtImg{
+#fourtImg {
     width: 190px;
     height: 130px;
     margin: 30px 0px 0px 30px;
     transition: 0.3s;
 }
+
 #fourtImg:hover {
     width: 220px;
     transition: 0.3s;

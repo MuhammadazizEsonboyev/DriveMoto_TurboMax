@@ -1,0 +1,140 @@
+.xurshid {
+  margin-top: 50px;
+}
+
+.xurshid_nav {
+  flex-wrap: wrap;
+  background: #f0f0f4;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height */
+
+  /* Основной текст */
+
+  color: #2f3035;
+
+  opacity: 0.6;
+}
+
+.xurshid_h6 {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #2f3035;
+  opacity: 0.7;
+  margin-top: 4px;
+}
+
+.xurshid_input {
+  margin-top: 50px;
+  display: flex;
+  gap: 15px;
+}
+
+.category-name {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #2f3035;
+  padding: 10px 40px;
+  border: none;
+  width: 10px;
+}
+
+.category-name:hover {
+  cursor: pointer;
+  border-bottom: 3px solid #317def;
+  transition: 0.1s;
+  font-size: 24px;
+  color: #2f3035;
+}
+
+.xurshid_input_input {
+  background: #f0f0f4;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  color: red;
+  width: 313px;
+  height: 33px;
+}
+
+.div_xurshid_1 {
+  display: flex;
+  margin-top: 50px;
+  gap: 10px;
+}
+
+.div_xurshid_2 {
+  display: flex;
+  margin-top: 50px;
+  gap: 10px;
+}
+.xurshid1_h6 {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #2f3035;
+
+  opacity: 0.7;
+}
+
+.xurshid2_h6 {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #2f3035;
+
+  opacity: 0.7;
+}
+
+.xurshid_section {
+  margin-top: 50px;
+  display: flex;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height */
+
+  /* Основной текст */
+
+  color: #2f3035;
+}
+.xurshid_section1{
+  display: flex;
+  
+  font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+/* Основной текст */
+
+color: #2F3035;
+
+opacity: 0.7;
+}
+@media (max-width: 575px) {
+  body {
+    background: red;
+  }
+
+  .section_xurshid {
+    display: grid;
+  }
+}

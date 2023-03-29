@@ -18,7 +18,7 @@ import { motion } from "framer-motion"
 export default function navbarPage() {
   return (
     <div>
-      <Container>
+      {/* <Container>
         <Row className='justify-content-center'>
          
         <Col xs={12} lg={12} className='d-block d-sm-none'>
@@ -64,15 +64,45 @@ export default function navbarPage() {
               </div>
             </div>
           </Col>
-
-
         </Row>
-      </Container>
+      </Container> */}
 
-      <Container>
-        <Row>
-          <Col xs={12} lg={12}>
-            <div id='nav-category-box'>
+      <nav id='nav-asad'>
+        <Container>
+          <Row className='justify-content-center'>
+            <Col xs={5}>
+              <div id='Navbar-box'>
+                <h4 id='nav-market'>Магазины</h4>
+                <h4 id='nav-market'>Акции</h4>
+                <h4 id='nav-market'>Доставка и оплата</h4>
+              </div>
+            </Col>
+            <Col xs={2}>
+              <div id="image">
+                <img src={logo} alt="svg" id='logo' />
+              </div>
+            </Col>
+            <Col xs={5}>
+              <div id='Navbar-box'>
+                <img src={navigation} alt="svg" id='navigation-img' />
+                <h4 id='nav-adress' >Москва,  ул. Науки  25</h4>
+                <div id='profile-box'>
+                  <img src={Like} alt=""
+                  />
+                  <ModalNav />
+                  <img src={Card} alt=""
+                  />
+                </div>
+              </div>
+            </Col>
+            </Row>
+            </Container>
+      </nav>
+
+      <div id='nav-category-box'>
+        <Container>
+          <Row>
+            <Col xs={12}>
               <div id='category-box'>
                 {
                   products.map((item) => {
@@ -82,13 +112,10 @@ export default function navbarPage() {
                   })
                 }
               </div>
-            </div>
-          </Col>
-        </Row>
-      </Container>
-
-
-
+            </Col>
+          </Row>
+        </Container>
+      </div>
       <div id="advertisement-box">
         <Container>
           <Row>
@@ -166,16 +193,18 @@ export default function navbarPage() {
                 }}
               >
 
-                <div id='sale-box'>
-                  <button id='sale'>акция</button>
+                <div id='sale-box' >
+                  <div className="button_group_asa">
+                    <button id='sale'>акция</button>
+                  </div>
                   <div id='prices'>
                     <p id='nineteen'>190 000 <img src={RubleFirst} alt="" /></p>
+                    <p id='twenty'>225 000 <img src={RubleSec} id="RubleSec" alt="" /> </p>
                   </div>
                 </div>
-                <p id='twenty'>225 000 <img src={RubleSec} id="RubleSec" alt="" /> </p>
 
                 <img src={engine} id="engine" alt="" />
-                <h1 id='engine-info'>Лодочный мотор
+                <h1 id='engine-info'>Лодочный мотор <br />
                   Suzuki DF9.9BRS</h1>
 
                 <div id='date-box'>
@@ -188,6 +217,6 @@ export default function navbarPage() {
         </Container>
       </div>
 
-    </div >
+    </div>
   )
 }
