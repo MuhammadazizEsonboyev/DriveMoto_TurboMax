@@ -4,6 +4,17 @@ import { Button, Col, Container, Nav, Navbar, Row } from "react-bootstrap";
 import "./Xheader.css";
 
 export default function Xheader() {
+
+const list= [
+
+  {
+    id:1,
+    name:"Москва, ул. Науки 25",
+    vaqt:"пн-сб:   08:00-19:00"
+  }
+
+]
+
   return (
     <>
       <section className="xurshid">
