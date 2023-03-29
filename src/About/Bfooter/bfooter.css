@@ -26,3 +26,108 @@
     font-size: 25px;
     line-height: 30px;
 }
+
+.kalonb {
+    padding-top: 50px;
+    width: 200px;
+    margin: auto;
+}
+
+.bcardtex {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.bsamlte {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center; 
+}
+
+.fa-regular{
+    font-size: 20px;
+    margin-top: 10px;
+margin-left: 240px;
+}
+
+.brublte{
+    font-family: 'Barlow';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+/* identical to box height */
+
+text-align: center;
+
+}
+
+.bdtex{
+    text-align: center;
+}
+
+.yetirub{
+    margin-top: 40px;
+    
+font-family: 'Barlow';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+/* identical to box height */
+
+text-align: center;
+
+}
+
+.mmkiyimb{
+    text-align: center;
+}
+
+.rafab{
+    text-align: center;
+}
+
+.netnalichb{
+    margin-top: 34px;
+    font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+
+}
+
+.plusb{
+    text-align: center;
+}
+
+.rubab{
+    margin-top: 40px;
+    font-family: 'Barlow';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+/* identical to box height */
+
+text-align: center;
+}
+
+.dresb{
+    width: 190px;
+    margin: auto;
+}
+
+.purjina{
+    width: 180px;
+    margin: auto;
+}

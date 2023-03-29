@@ -20,7 +20,11 @@ export default function navbarPage() {
     <div>
       <Container>
         <Row className='justify-content-center'>
-          <Col xs={5}>
+         
+        <Col xs={12} lg={12} className='d-block d-sm-none'>
+        </Col>
+
+          <Col xs={5} className='d-none d-sm-block'>
             <div id='Navbar-box'>
               <h4 id='nav-market'>Магазины</h4>
               <h4 id='nav-market'>Акции</h4>
@@ -28,7 +32,7 @@ export default function navbarPage() {
             </div>
           </Col>
 
-          <Col xs={2}>
+          <Col xs={2} className='d-none d-sm-block'>
             <motion.img src={logo} alt="svg" id='logo'
               initial={{
                 x: 100,
@@ -44,7 +48,7 @@ export default function navbarPage() {
             />
           </Col>
 
-          <Col xs={5}>
+          <Col xs={3} lg={5} className='d-none d-sm-block' >
             <div id='Navbar-box'>
               <img src={navigation} alt="svg" id='navigation-img' />
               <h4 id='nav-adress' >Москва,  ул. Науки  25</h4>
@@ -60,12 +64,14 @@ export default function navbarPage() {
               </div>
             </div>
           </Col>
+
+
         </Row>
       </Container>
 
       <Container>
         <Row>
-          <Col xs={12}>
+          <Col xs={12} lg={12}>
             <div id='nav-category-box'>
               <div id='category-box'>
                 {
