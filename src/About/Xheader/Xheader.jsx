@@ -1,4 +1,3 @@
-import axios from "axios";
 import React from "react";
 import { Button, Col, Container, Nav, Navbar, Row } from "react-bootstrap";
 
@@ -16,10 +15,24 @@ export default function Xheader(props) {
       },
       {
         id: 2,
-        name: "Москва, ул. Науки 25",
+        name: "Москва, ул.  Южная 134",
         vaqt: "пн-сб:   08:00-19:00",
         bil: "В наличии",
-        raqam: 1,
+        raqam: 2,
+      },
+      {
+        id: 3,
+        name: "Санкт-Петербург, ул. Красная 19",
+        vaqt: "пн-сб:   08:00-19:00",
+        bil: "Нет в наличии",
+        raqam: 0,
+      },
+      {
+        id: 4,
+        name: "Санкт-Петербург, ул. Красная 19",
+        vaqt: "пн-сб:   08:00-19:00",
+        bil: "Нет в наличии",
+        raqam: 0,
       },
     ];
  
