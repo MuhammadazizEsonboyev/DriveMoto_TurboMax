@@ -6,9 +6,15 @@ import "./index.css"
 function App() {
   return (
    <>
+
+    
+
+
+
    
       <AppOne/>
-      {/* <AppThree/> */}
+       <AppOne/>
+       <AppThree/>
     
    </>
   );
