@@ -12,6 +12,7 @@ function App() {
 
 
    
+      <AppOne/>
        <AppOne/>
        <AppThree/>
     
