@@ -50,7 +50,7 @@ export default function Xheader() {
             </Col>
           </Row>
           <Row  className="mt-5">
-            {/* <div className="xurshid_section"> */}
+            <div className="xurshid_section">
              <Col xs={3}>
               <h5>Адрес</h5>
              </Col>
@@ -61,11 +61,32 @@ export default function Xheader() {
               <h5>Доступно</h5>
              </Col>
              <Col xs={2}>
-              <h5>Доступно</h5>
+              <h5>Количество</h5>
              </Col>
             
-            {/* </div> */}
+            </div>
           </Row>
+          <Row  className="mt-5">
+            <div className="xurshid_section">
+             <Col xs={3}>
+              <h5>Москва, ул. Науки 25</h5>
+             </Col>
+             <Col xs={3}>
+              <h5>пн-сб:   08:00-19:00</h5>
+             </Col>
+             <Col xs={2}>
+              <h5>В наличии</h5>
+             </Col>
+             <Col xs={3}>
+              <h5>1</h5>
+             </Col>
+             <Col xs={1}>
+             <button>КУПИТЬ</button>
+             </Col>
+            
+            </div>
+          </Row>
+
         </Container>
       </section>
     </>

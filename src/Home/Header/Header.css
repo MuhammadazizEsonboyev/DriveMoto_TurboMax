@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#search-main-box {
+    display: flex;
+    margin-top: 80px;
+    justify-content: space-between;
+}
+
+#search {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2F3035;
+    padding: 10px 10px 10px 10px;
+}
+
+#search:hover {
+    color: #2F3035;
+}
+
+
+#search-box {
+    background-color: #ffff;
+    border: none;
+}
+
+#search-box:hover {
+    background: #F0F0F4;
+    border-radius: 5px;
+    cursor: pointer;
+    /* padding: 0px 20px; */
+}
+
+#inp-box {
+    position: relative;
+    margin: 30px 0px 150px 0px;
+    border: none;
+    background: #F0F0F4;
+    border-radius: 3px;
+}
+
+#search-btn {
+    position: absolute;
+    margin-left: 1165px;
+    padding: 13px 40px;
+    background: #1C62CD;
+    border-radius: 3px;
+    border: none;
+}
+
+#mark {
+    height: 50px;
+    position: absolute;
+    padding: 5px 10px;
+    width: 100%;
+}
+
+
+#head-box {
+    width: 100%;
+    height: 170px;
+    background: #FFFFFF;
+    border: 1px solid #CDCDCD;
+    border-radius: 5px;
+    display: flex;
+    margin-bottom: 40px;
+    transition: 0.3s;
+}
+
+
+#head-box:hover {
+    box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+    transition: 0.3s;
+}
+
+#firstImg {
+    width: 190px;
+    height: 130px;
+    margin: 30px 0px 0px 0px;
+    transition: 0.3s;
+
+}
+
+#firstImg:hover {
+    width: 220px;
+    transition: 0.3s;
+    margin-top: 25px;
+    height: 140px;
+}
+
+#about {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 17px;
+    color: #C4C4C4;
+    padding-left: 20px;
+
+}
+
+#model-name {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 28px;
+    color: #2F3035;
+    padding: 20px 20px 0px 20px;
+}
+
+#model-name:hover {
+    color: #1C62CD;
+}
+
+#model-info {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+#thirdImg{
+    width: 190px;
+    height: 130px;
+    margin: 30px 0px 0px 50px;
+    transition: 0.3s;
+}
+
+#thirdImg:hover {
+    width: 220px;
+    transition: 0.3s;
+    margin-top: 25px;
+    height: 140px;
+}
+
+#fourtImg{
+    width: 190px;
+    height: 130px;
+    margin: 30px 0px 0px 30px;
+    transition: 0.3s;
+}
+#fourtImg:hover {
+    width: 220px;
+    transition: 0.3s;
+    margin-top: 25px;
+    height: 140px;
+}
