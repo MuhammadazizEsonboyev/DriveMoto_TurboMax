@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Nav, Navbar, Row } from "react-bootstrap";
+import { Button, Col, Container, Nav, Navbar, Row } from "react-bootstrap";
 
 import "./Xheader.css";
 
@@ -67,24 +67,66 @@ export default function Xheader() {
             </div>
           </Row>
           <Row  className="mt-5">
-            <div className="xurshid_section">
+            {/* <div className="xurshid_section1"> */}
              <Col xs={3}>
-              <h5>Москва, ул. Науки 25</h5>
+              <h5  className="xurshid_section1">Москва, ул. Науки 25</h5>
              </Col>
              <Col xs={3}>
-              <h5>пн-сб:   08:00-19:00</h5>
+              <h5 className="xurshid_section1">пн-сб:   08:00-19:00</h5>
              </Col>
              <Col xs={2}>
-              <h5>В наличии</h5>
+              <h5 className="xurshid_section1">В наличии</h5>
              </Col>
              <Col xs={3}>
-              <h5>1</h5>
+              <h5 className="xurshid_section1">1</h5>
              </Col>
+            {/* </div> */}
              <Col xs={1}>
-             <button>КУПИТЬ</button>
+             <Button variant="primary">КУПИТЬ</Button>
              </Col>
             
-            </div>
+          </Row>
+
+          <Row  className="mt-5">
+            {/* <div className="xurshid_section1"> */}
+             <Col xs={3}>
+              <h5  className="xurshid_section1">Москва, ул. Науки 25</h5>
+             </Col>
+             <Col xs={3}>
+              <h5 className="xurshid_section1">пн-сб:   08:00-19:00</h5>
+             </Col>
+             <Col xs={2}>
+              <h5 className="xurshid_section1">В наличии</h5>
+             </Col>
+             <Col xs={3}>
+              <h5 className="xurshid_section1">1</h5>
+             </Col>
+            {/* </div> */}
+             <Col xs={1}>
+             <Button variant="primary">КУПИТЬ</Button>
+             </Col>
+            
+          </Row>
+
+          <Row  className="mt-5">
+            {/* <div className="xurshid_section1"> */}
+             <Col xs={3}>
+              <h5  className="xurshid_section1">Москва, ул. Науки 25</h5>
+             </Col>
+             <Col xs={3}>
+              <h5 className="xurshid_section1">пн-сб:   08:00-19:00</h5>
+             </Col>
+             <Col xs={2}>
+              <h5 className="xurshid_section1">В наличии</h5>
+             </Col>
+             <Col xs={3}>
+              <h5 className="xurshid_section1">1</h5>
+             </Col>
+            {/* </div> */}
+             <Col xs={1}>
+             <Button variant="primary">КУПИТЬ</Button>
+             </Col>
+            
           </Row>
 
         </Container>

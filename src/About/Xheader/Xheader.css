@@ -114,6 +114,21 @@
 
   color: #2f3035;
 }
+.xurshid_section1{
+  display: flex;
+  
+  font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+/* Основной текст */
+
+color: #2F3035;
+
+opacity: 0.7;
+}
 @media (max-width: 575px) {
   body {
     background: red;
