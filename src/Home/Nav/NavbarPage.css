@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&family=Open+Sans:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +12,6 @@
 }
 
 #nav-market {
-    font-family: 'SF Pro Display';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -14,33 +20,35 @@
     color: #2F3035;
     padding: 30px 30px;
 }
+#nav-asad{
+    padding-top: 25px;
+}
 
 #Navbar-box {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#logo {
-    padding: 0px 30px;
+#image{
+    text-align: center;
 }
+
 
 #nav-adress {
-    font-family: 'SF Pro Display';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
     color: #2F3035;
-    padding-right: 200px;
     padding: 30px 0px;
 }
-
 #navigation-img {
     margin: 0px 10px 10px 0px;
 }
-
 #profile-box {
-    margin: 20px 10px 10px 180px;
+    margin-left: 70px;
 }
 
 #nav-category-box {
@@ -55,23 +63,25 @@
 }
 
 #category-name {
-    font-family: 'SF Pro Display';
-    font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 19px;
     text-transform: capitalize;
     color: #2F3035;
-    padding: 10px 40px;
+    width: 160px;
+    height: 45px;
+    transition: .5s;
     border: none;
 }
 
 #category-name:hover {
     cursor: pointer;
     border-bottom: 3px solid #317def;
-    transition: 0.1s;
-    font-size: 23px;
-    color: #2F3035;
+    transition: .3s;
+    color: #317def;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
 }
 
 #advertisement-box {
@@ -82,28 +92,32 @@
 
 .img-carousel {
     width: 100%;
-    height: 100%;
-    height: 600px;
+    height: 500px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
 }
 
 #sale-box {
     display: flex;
     justify-content: space-between;
-
 }
 
 
 #border-app {
-    margin: 50px 0px 0px 50px;
-    width: 270px;
-    height: 480px;
+    height: 98%;
     border: 1.5px solid #CDCDCD;
     border-radius: 3px;
 }
 
 #sale {
-    padding: 1px 25px;
+    padding: 8px 20px;
+    margin: 0;
+    font-size: 12px;
     border: none;
+    font-weight: 900;
     background: #1C62CD;
     color: #ffff;
     text-transform: uppercase;
@@ -114,25 +128,21 @@
     transition: 0.3s;
 }
 
+#prices {
+    text-align: end;
+    padding-right: 5px;
+}
+
 #nineteen {
-    font-family: 'Barlow';
-    font-style: normal;
     font-weight: 700;
-    font-size: 33px;
-    line-height: 32px;
+    font-size: 27px;
     color: #1C62CD;
-    display: flex;
-    padding-top: 10px;
+    margin: 0;
 }
 
 #twenty {
-    font-family: 'Barlow';
-    font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    margin-left: 170px;
-    display: flex;
-    line-height: 17px;
+    font-size: 14px;
     color: #C4C4C4;
     text-decoration: line-through;
 }
@@ -147,22 +157,20 @@
 }
 
 #engine-info {
-    font-family: 'SF Pro Display';
-    font-style: normal;
     font-weight: 700;
     font-size: 23px;
-    line-height: 21px;
-    margin: 5px 10px 10px 10px;
+
     text-align: center;
     color: #2F3035;
+    text-transform: capitalize;
 }
 
 #date-box {
     background: #F0F0F4;
+    margin-top: 30px;
 }
 
 #date-till {
-    font-family: 'SF Pro Display';
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -173,12 +181,25 @@
 }
 
 #date {
-    font-family: 'Barlow';
-    font-style: normal;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 22px;
-    line-height: 22px;
     text-align: center;
     color: #1C62CD;
     padding-bottom: 28px;
+}
+
+
+
+@media screen and (max-width:576px) {
+    #category-name {
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: capitalize;
+        color: #2F3035;
+        padding: 10px 40px;
+        border: none;
+    }
 }
