@@ -18,6 +18,55 @@ import { motion } from "framer-motion"
 export default function navbarPage() {
   return (
     <div>
+      {/* <Container>
+        <Row className='justify-content-center'>
+         
+        <Col xs={12} lg={12} className='d-block d-sm-none'>
+        </Col>
+
+          <Col xs={5} className='d-none d-sm-block'>
+            <div id='Navbar-box'>
+              <h4 id='nav-market'>Магазины</h4>
+              <h4 id='nav-market'>Акции</h4>
+              <h4 id='nav-market'>Доставка и оплата</h4>
+            </div>
+          </Col>
+
+          <Col xs={2} className='d-none d-sm-block'>
+            <motion.img src={logo} alt="svg" id='logo'
+              initial={{
+                x: 100,
+                opacity: 0
+              }}
+              animate={{
+                x: 0,
+                opacity: 1
+              }}
+              transition={{
+                delay: 0.5
+              }}
+            />
+          </Col>
+
+          <Col xs={3} lg={5} className='d-none d-sm-block' >
+            <div id='Navbar-box'>
+              <img src={navigation} alt="svg" id='navigation-img' />
+              <h4 id='nav-adress' >Москва,  ул. Науки  25</h4>
+
+              <div id='profile-box'>
+                <img src={Like} alt=""
+
+                />
+
+                <ModalNav />
+                <img src={Card} alt=""
+                />
+              </div>
+            </div>
+          </Col>
+        </Row>
+      </Container> */}
+
       <nav id='nav-asad'>
         <Container>
           <Row className='justify-content-center'>
@@ -46,8 +95,8 @@ export default function navbarPage() {
                 </div>
               </div>
             </Col>
-          </Row>
-        </Container>
+            </Row>
+            </Container>
       </nav>
 
       <div id='nav-category-box'>
@@ -168,6 +217,6 @@ export default function navbarPage() {
         </Container>
       </div>
 
-    </div >
+    </div>
   )
 }

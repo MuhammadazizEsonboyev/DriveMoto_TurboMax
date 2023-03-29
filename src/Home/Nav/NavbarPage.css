@@ -185,5 +185,21 @@ body {
     font-size: 22px;
     text-align: center;
     color: #1C62CD;
-    padding-bottom: 30px;
+    padding-bottom: 28px;
+}
+
+
+
+@media screen and (max-width:576px) {
+    #category-name {
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: capitalize;
+        color: #2F3035;
+        padding: 10px 40px;
+        border: none;
+    }
 }
