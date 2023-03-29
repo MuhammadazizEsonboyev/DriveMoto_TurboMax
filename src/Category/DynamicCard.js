@@ -23,7 +23,7 @@ export const carts = [
     price: "1 323 700 ₽",
   },
   {
-    name: "Гидроцикл BRP SeaDoo GTI 130hp SE BlackMango",
+    name: "Гидроцикл BRP SeaDoo GTI 130hp SE ",
     img: img4,
     see: "Сообщить о поступлении",
     net: "нет в наличии",
