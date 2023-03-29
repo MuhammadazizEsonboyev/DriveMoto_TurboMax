@@ -4,19 +4,13 @@ import AppOne from "./Home/AppOne";
 import "./index.css"
 
 function App() {
-      return (
-            <>
-
-
-
-
-
-
-                  <AppOne />
-                  <AppThree />
-
-            </>
-      );
+  return (
+   <>
+      <AppOne/>
+      <AppThree/>
+   </>
+  );
+   
 }
 
 export default App;
