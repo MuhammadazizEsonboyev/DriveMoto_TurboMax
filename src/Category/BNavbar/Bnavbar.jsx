@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import { useTheme } from "@mui/material/styles";
 import OutlinedInput from "@mui/material/OutlinedInput";
@@ -44,6 +44,15 @@ const Bnavbar = () => {
     );
   };
 
+
+
+  const [noOfelement, setNoElement] = useState(3)
+
+  const slice = carts.slice(0, noOfelement)
+
+  const loadMore = () => {
+    setNoElement( noOfelement + noOfelement)
+  }
   return (
     <>
       <Container>
@@ -85,7 +94,7 @@ const Bnavbar = () => {
       <div className="sectioncategory">
         <Container>
           <Row className="mb-5 mt-5">
-           {carts.map((item) => (
+           {slice.map((item) => (
              <Col xs={4} className="mb-2">
              <Card style={{ width: "25rem", textAlign: "center", position:"relative" }}>
                <i class="fa-regular fa-heart heart1"></i>
@@ -117,6 +126,10 @@ const Bnavbar = () => {
            ))}
           </Row>
         </Container>
+
+        <button 
+        onClick={() => loadMore()}
+        className="btn btn-dark d-block w-100 mb-5">See more</button>
       </div>
     </>
   );
