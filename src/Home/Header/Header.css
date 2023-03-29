@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&family=Open+Sans:wght@400;500;600;700&display=swap');
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
 }
 
 #search-main-box {
@@ -11,11 +17,10 @@
 }
 
 #search {
-    font-family: 'SF Pro Display';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: 24px;
+    /* line-height: 24px; */
     color: #2F3035;
     padding: 10px 10px 10px 10px;
 }
@@ -95,7 +100,6 @@
 }
 
 #about {
-    font-family: 'SF Pro Display';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -106,7 +110,6 @@
 }
 
 #model-name {
-    font-family: 'Barlow';
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
@@ -120,14 +123,13 @@
 }
 
 #model-info {
-    font-family: 'Barlow';
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     padding-left: 20px;
 }
 
-#thirdImg{
+#thirdImg {
     width: 190px;
     height: 130px;
     margin: 30px 0px 0px 50px;
@@ -141,12 +143,13 @@
     height: 140px;
 }
 
-#fourtImg{
+#fourtImg {
     width: 190px;
     height: 130px;
     margin: 30px 0px 0px 30px;
     transition: 0.3s;
 }
+
 #fourtImg:hover {
     width: 220px;
     transition: 0.3s;
