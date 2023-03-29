@@ -1,19 +1,33 @@
+import axios from "axios";
 import React from "react";
 import { Button, Col, Container, Nav, Navbar, Row } from "react-bootstrap";
 
 import "./Xheader.css";
 
-export default function Xheader() {
+export default function Xheader(props) {
+  
+    const data = [
+      {
+        id: 1,
+        name: "Москва, ул. Науки 25",
+        vaqt: "пн-сб:   08:00-19:00",
+        bil: "В наличии",
+        raqam: 1,
+      },
+      {
+        id: 2,
+        name: "Москва, ул. Науки 25",
+        vaqt: "пн-сб:   08:00-19:00",
+        bil: "В наличии",
+        raqam: 1,
+      },
+    ];
+ 
+  
+  
 
-const list= [
+ 
 
-  {
-    id:1,
-    name:"Москва, ул. Науки 25",
-    vaqt:"пн-сб:   08:00-19:00"
-  }
-
-]
 
   return (
     <>
@@ -44,6 +58,8 @@ const list= [
                   type="text"
                   className="xurshid_input_input"
                   placeholder="Введите название магазина"
+
+                
                 />
               </div>
             </Col>
@@ -60,86 +76,49 @@ const list= [
               </div>
             </Col>
           </Row>
-          <Row  className="mt-5">
+          <Row className="mt-5">
             <div className="xurshid_section">
-             <Col xs={3}>
-              <h5>Адрес</h5>
-             </Col>
-             <Col xs={3}>
-              <h5>Режим работы</h5>
-             </Col>
-             <Col xs={2}>
-              <h5>Доступно</h5>
-             </Col>
-             <Col xs={2}>
-              <h5>Количество</h5>
-             </Col>
-            
+              <Col xs={3}>
+                <h5>Адрес</h5>
+              </Col>
+              <Col xs={3}>
+                <h5>Режим работы</h5>
+              </Col>
+              <Col xs={2}>
+                <h5>Доступно</h5>
+              </Col>
+              <Col xs={2}>
+                <h5>Количество</h5>
+              </Col>
             </div>
           </Row>
-          <Row  className="mt-5">
+          <Row className="mt-5">
             {/* <div className="xurshid_section1"> */}
-             <Col xs={3}>
-              <h5  className="xurshid_section1">Москва, ул. Науки 25</h5>
-             </Col>
-             <Col xs={3}>
-              <h5 className="xurshid_section1">пн-сб:   08:00-19:00</h5>
-             </Col>
-             <Col xs={2}>
-              <h5 className="xurshid_section1">В наличии</h5>
-             </Col>
-             <Col xs={3}>
-              <h5 className="xurshid_section1">1</h5>
-             </Col>
-            {/* </div> */}
-             <Col xs={1}>
-             <Button variant="primary">КУПИТЬ</Button>
-             </Col>
-            
+            {data.map(({ name, vaqt, bil,raqam }) => (
+              <>
+               <div className="xurshidbek_div" >
+               <Col xs={3}>
+                  <h5 className="xurshid_section1" >{name}</h5>
+                </Col>
+                <Col xs={3}>
+                  <h5 className="xurshid_section1">{vaqt}</h5>
+                </Col>
+                <Col xs={2}>
+                  <h5 className="xurshid_section1">{bil}</h5>
+                </Col>
+                <Col xs={3}>
+                  <h5 className="xurshid_section1">{raqam}</h5>
+                </Col>
+                {/* </div> */}
+                <Col xs={1}>
+                  <Button  variant="primary">КУПИТЬ</Button>
+                </Col>
+               </div>
+              </>
+            ))}
           </Row>
 
-          <Row  className="mt-5">
-            {/* <div className="xurshid_section1"> */}
-             <Col xs={3}>
-              <h5  className="xurshid_section1">Москва, ул. Науки 25</h5>
-             </Col>
-             <Col xs={3}>
-              <h5 className="xurshid_section1">пн-сб:   08:00-19:00</h5>
-             </Col>
-             <Col xs={2}>
-              <h5 className="xurshid_section1">В наличии</h5>
-             </Col>
-             <Col xs={3}>
-              <h5 className="xurshid_section1">1</h5>
-             </Col>
-            {/* </div> */}
-             <Col xs={1}>
-             <Button variant="primary">КУПИТЬ</Button>
-             </Col>
-            
-          </Row>
-
-          <Row  className="mt-5">
-            {/* <div className="xurshid_section1"> */}
-             <Col xs={3}>
-              <h5  className="xurshid_section1">Москва, ул. Науки 25</h5>
-             </Col>
-             <Col xs={3}>
-              <h5 className="xurshid_section1">пн-сб:   08:00-19:00</h5>
-             </Col>
-             <Col xs={2}>
-              <h5 className="xurshid_section1">В наличии</h5>
-             </Col>
-             <Col xs={3}>
-              <h5 className="xurshid_section1">1</h5>
-             </Col>
-            {/* </div> */}
-             <Col xs={1}>
-             <Button variant="primary">КУПИТЬ</Button>
-             </Col>
-            
-          </Row>
-
+         
         </Container>
       </section>
     </>
