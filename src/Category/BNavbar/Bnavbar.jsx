@@ -7,7 +7,7 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import { carts } from "../DynamicCard";
-const img1 = require("..//imagescategory/img1.png");
+import "..//Category.css"
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
 const MenuProps = {
@@ -88,7 +88,7 @@ const Bnavbar = () => {
            {carts.map((item) => (
              <Col xs={4} className="mb-2">
              <Card style={{ width: "25rem", textAlign: "center", position:"relative" }}>
-               <i class="fa-regular fa-heart"></i>
+               <i class="fa-regular fa-heart heart1"></i>
                <Card.Img variant="top" src={item.img} alt="" className="img1" />
                <Card.Body>
                  <Card.Title
@@ -103,11 +103,12 @@ const Bnavbar = () => {
                  >
                    {item.price}
                    {item.net}
+                   <h4>{item.message}</h4>
                  </Card.Text>
                </Card.Body>
                <Card.Body>
                  <i
-                   style={{}}
+                   style={{position:"absolute"}}
                    className="fa-solid fa-cart-shopping bucket"
                  ></i>
                </Card.Body>

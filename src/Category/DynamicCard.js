@@ -27,6 +27,7 @@ export const carts = [
     img: img4,
     see: "Сообщить о поступлении",
     net: "нет в наличии",
+    message:"Сообщить о поступлении"
   },
   {
     name: "Гидроцикл BRP SeaDoo GTI 130hp SE BlackMango",
