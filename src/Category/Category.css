@@ -1,0 +1,15 @@
+.bucket {
+  position: absolute;
+  background: #1c62cd;
+  border-radius: 10px 0px 0px 0px;
+  padding: 7px 9px 10px 15px;
+  right: 0;
+  bottom: 0;
+}
+.sectioncategory {
+  position: relative;
+}
+
+ .bucket{
+ top: 0;
+ }

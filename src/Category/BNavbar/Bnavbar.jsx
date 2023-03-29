@@ -1,9 +1,124 @@
-import React from 'react'
+import React from "react";
+import { Card, Col, Container, Row } from "react-bootstrap";
+import { useTheme } from "@mui/material/styles";
+import OutlinedInput from "@mui/material/OutlinedInput";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import Select from "@mui/material/Select";
+import { carts } from "../DynamicCard";
+const img1 = require("..//imagescategory/img1.png");
+const ITEM_HEIGHT = 48;
+const ITEM_PADDING_TOP = 8;
+const MenuProps = {
+  PaperProps: {
+    style: {
+      maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
+      width: 250,
+    },
+  },
+};
 
-const Bnavbar = () => {
-  return (
-    <div>Bnavbar</div>
-  )
+const names = ["Our product", "About it", "Prices"];
+
+function getStyles(name, personName, theme) {
+  return {
+    fontWeight:
+      personName.indexOf(name) === -1
+        ? theme.typography.fontWeightRegular
+        : theme.typography.fontWeightMedium,
+  };
 }
 
-export default Bnavbar
+const Bnavbar = () => {
+  const theme = useTheme();
+  const [personName, setPersonName] = React.useState([]);
+
+  const handleChange = (event) => {
+    const {
+      target: { value },
+    } = event;
+    setPersonName(
+      // On autofill we get a stringified value.
+      typeof value === "string" ? value.split(",") : value
+    );
+  };
+
+  return (
+    <>
+      <Container>
+        <Row className="justify-content-end">
+          <Col xs={4}>
+            <div>
+              <FormControl sx={{ m: 1, width: 300 }}>
+                <InputLabel
+                  style={{ paddingLeft: "50px" }}
+                  id="demo-multiple-name-label"
+                >
+                  По полулярности
+                </InputLabel>
+                <Select
+                  labelId="demo-multiple-name-label"
+                  id="demo-multiple-name"
+                  multiple
+                  value={personName}
+                  onChange={handleChange}
+                  input={<OutlinedInput label="Name" />}
+                  MenuProps={MenuProps}
+                >
+                  {names.map((name) => (
+                    <MenuItem
+                      key={name}
+                      value={name}
+                      style={getStyles(name, personName, theme)}
+                    >
+                      {name}
+                    </MenuItem>
+                  ))}
+                </Select>
+              </FormControl>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+
+      <div className="sectioncategory">
+        <Container>
+          <Row className="mb-5 mt-5">
+           {carts.map((item) => (
+             <Col xs={4} className="mb-2">
+             <Card style={{ width: "25rem", textAlign: "center", position:"relative" }}>
+               <i class="fa-regular fa-heart"></i>
+               <Card.Img variant="top" src={item.img} alt="" className="img1" />
+               <Card.Body>
+                 <Card.Title
+                   style={{ fontSize: "18px", fontWeight: "300" }}
+                   className="titlecategory"
+                 >
+                   {item.name}
+                 </Card.Title>
+                 <Card.Text
+                   style={{ fontSize: "30px", fontWeight: "700" }}
+                   className="price"
+                 >
+                   {item.price}
+                   {item.net}
+                 </Card.Text>
+               </Card.Body>
+               <Card.Body>
+                 <i
+                   style={{}}
+                   className="fa-solid fa-cart-shopping bucket"
+                 ></i>
+               </Card.Body>
+             </Card>
+           </Col>
+           ))}
+          </Row>
+        </Container>
+      </div>
+    </>
+  );
+};
+
+export default Bnavbar;
