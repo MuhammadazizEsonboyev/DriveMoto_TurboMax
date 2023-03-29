@@ -5,11 +5,26 @@
   padding: 7px 9px 10px 15px;
   right: 0;
   bottom: 0;
+  color: rgb(159, 156, 156);
 }
 .sectioncategory {
   position: relative;
 }
+.heart1{
+color: gray;
+margin-left: 330px;
+cursor: pointer;
+}
+.price:hover{
+  color: blue;
+  cursor: pointer;
+}
 
- .bucket{
- top: 0;
- }
+.titlecategory:hover{
+  color: blue;
+  cursor: pointer;
+}
+.img1:hover{
+width: 410px;
+transition: 0.5s;
+}
