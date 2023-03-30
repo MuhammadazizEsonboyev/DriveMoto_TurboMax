@@ -6,7 +6,7 @@ import RubleFirst from "./image/icons8-рубль-50.svg";
 import RubleSec from "./image/icons8-рубль-50 (1).svg";
 import engine from "./image/engine.svg";
 import { motion } from "framer-motion";
-import MainNav from "../MainNav";
+// import MainNav from "../MainNav";
 
 export default function navbarPage() {
   return (
@@ -65,7 +65,7 @@ export default function navbarPage() {
       <div id="advertisement-box">
         <Container>
           <Row>
-            <Col xs={9}>
+            <Col xs={12} lg={9} className='d-none d-sm-block'>
               <Carousel>
                 <Carousel.Item interval={3000}>
                   <img
@@ -113,7 +113,56 @@ export default function navbarPage() {
               </Carousel>
             </Col>
 
-            <Col xs={3}>
+
+            <Col xs={12} lg={9} className='d-block d-sm-none'>
+              <Carousel>
+                <Carousel.Item interval={3000}>
+                  <img
+                    className="d-block img-carousel"
+                    src="https://thumbs.dreamstime.com/b/two-atv-riders-speed-race-forest-front-view-helmets-riding-quad-bike-extreme-sport-travelling-quadbike-offroad-adventure-129263028.jpg"
+                    alt="First slide"
+                  />
+                  <Carousel.Caption></Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item interval={3000}>
+                  <img
+                    className="d-block d-sm-none img-carousel"
+                    src="https://thumbs.dreamstime.com/b/atv-woods-racing-15759004.jpg"
+                    alt="Second slide"
+                  />
+                  <Carousel.Caption></Carousel.Caption>
+                </Carousel.Item>
+
+                <Carousel.Item>
+                  <img
+                    className="d-block img-carousel"
+                    src="https://thumbs.dreamstime.com/b/atv-grassy-sand-dune-27806819.jpg"
+                    alt="Third slide"
+                  />
+                  <Carousel.Caption></Carousel.Caption>
+                </Carousel.Item>
+
+                <Carousel.Item>
+                  <img
+                    className="d-block img-carousel"
+                    src="https://thumbs.dreamstime.com/b/action-shot-sport-atv-vehicle-running-mud-track-98196655.jpg"
+                    alt="Third slide"
+                  />
+                  <Carousel.Caption></Carousel.Caption>
+                </Carousel.Item>
+
+                <Carousel.Item>
+                  <img
+                    className="d-block img-carousel"
+                    src="https://thumbs.dreamstime.com/b/summer-offroad-adventure-atv-sand-quarry-male-rider-helmet-quad-bike-sandpit-129262519.jpg"
+                    alt="Third slide"
+                  />
+                  <Carousel.Caption></Carousel.Caption>
+                </Carousel.Item>
+              </Carousel>
+            </Col>
+
+            <Col xs={12} lg={3} className='d-block d-sm-block'>
               <motion.div
                 id="border-app"
                 initial={{
@@ -134,7 +183,7 @@ export default function navbarPage() {
                   </div>
                   <div id="prices">
                     <p id="nineteen">
-                      190 000 <img src={RubleFirst} alt="" />
+                      190 000 <img src={RubleFirst} id={RubleFirst} alt="" />
                     </p>
                     <p id="twenty">
                       225 000 <img src={RubleSec} id="RubleSec" alt="" />{" "}

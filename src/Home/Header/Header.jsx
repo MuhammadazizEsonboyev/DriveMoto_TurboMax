@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { motion } from "framer-motion"
-import { products } from "../Nav/DataName"
+// import { products } from "../Nav/DataName"
 import './Header.css'
 import firstImg from './image/CFMOTO-X6-EPS_blue 1.svg'
 import secImg from './image/jet_ski_PNG90 1.svg'
@@ -15,7 +15,7 @@ export default function header() {
     <div>
       <Container>
         <Row className='justify-content-start'>
-          <Col xs={10}>
+          <Col xs={12}>
             <motion.div id='search-main-box'
               initial={{
                 x: -100,
@@ -30,22 +30,33 @@ export default function header() {
               }}
             >
 
-              {
-                products.map((val) => {
-                  return (
-                    <button id='search-box'>
-                      <h4 id="search">{val.search}</h4>
-                    </button>
-                  )
-                })
-              }
+              <button id='search-box'>
+                <h4 id="search">Поиск по  номеру</h4>
+              </button>
+              <button id='search-box'>
+                <h4 id="search">Поиск по марке</h4>
+              </button>
+              <button id='search-box'>
+                <h4 id="search">Поиск по названию товара</h4>
+              </button>
+
+              <button id='search-box'>
+                <h4 id="search">Поиск по рейтингу</h4>
+              </button>
             </motion.div>
           </Col>
 
-          <Col xs={12}>
+          <Col xs={4} lg={12} className='d-none d-sm-block'>
             <div id='inp-box'>
               <input type="text" name="" id="mark" placeholder='Введите марку ' />
               <button id='search-btn'>искать</button>
+            </div>
+          </Col>
+
+          <Col xs={12} lg={12} className='d-block d-sm-none'>
+            <div id='inp-box'>
+              <input type="text" name="" id="mark" placeholder='Введите марку ' />
+              <button id='search-btn'>&#128269;</button>
             </div>
           </Col>
         </Row>
@@ -53,9 +64,8 @@ export default function header() {
 
       <Container>
         <Row>
-          <Col xs={4}>
+          <Col xs={12} lg={4}  className="d-block d-sm-block">
             <div id='head-box'>
-
               <div id='title-box'>
                 <h3 id='model-name'>Квадроциклы</h3>
                 <p id='model-info'>
@@ -68,7 +78,7 @@ export default function header() {
               <img src={firstImg} id="firstImg" alt="" />
             </div>
           </Col>
-          <Col xs={4}>
+          <Col xs={12} lg={4} className="d-block d-sm-block">
             <div id='head-box'>
 
               <div id='title-box'>
@@ -84,7 +94,7 @@ export default function header() {
             </div>
           </Col>
 
-          <Col xs={4}>
+          <Col xs={12} lg={4} className="d-block d-sm-block">
             <div id='head-box'>
 
               <div id='title-box'>
@@ -102,7 +112,7 @@ export default function header() {
         </Row>
 
         <Row>
-          <Col xs={4}>
+          <Col xs={12} lg={4} className="d-block d-sm-block">
             <div id='head-box'>
 
               <div id='title-box'>
@@ -118,7 +128,7 @@ export default function header() {
             </div>
           </Col>
 
-          <Col xs={4}>
+          <Col xs={12} lg={4} className="d-block d-sm-block">
             <div id='head-box'>
 
               <div id='title-box'>
@@ -134,7 +144,7 @@ export default function header() {
             </div>
           </Col>
 
-          <Col xs={4}>
+          <Col xs={12} lg={4} className="d-block d-sm-block">
             <div id='head-box'>
 
               <div id='title-box'>
