@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import { useTheme } from "@mui/material/styles";
 import OutlinedInput from "@mui/material/OutlinedInput";
@@ -7,7 +7,7 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import { carts } from "../DynamicCard";
-const img1 = require("..//imagescategory/img1.png");
+import "..//Category.css";
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
 const MenuProps = {
@@ -44,10 +44,34 @@ const Bnavbar = () => {
     );
   };
 
+  const [noOfelement, setNoElement] = useState(3);
+
+  const slice = carts.slice(0, noOfelement);
+
+  const loadMore = () => {
+    setNoElement(noOfelement + noOfelement);
+  };
   return (
     <>
       <Container>
-        <Row className="justify-content-end">
+        <Row>
+          <Col xs={3}>
+            <br />
+            <h3>Гидроциклы</h3>
+          </Col>
+        </Row>
+      </Container>
+<br />
+      <Container>
+        <Row className="justify-content-between">
+          <Col xs={7}>
+          <div style={{gap:"20px"}} className="big">
+          <button className="btn1">Полноприводные</button>
+            <button className="btn2">от 5000</button>
+            <button className="btn3">BRP</button>
+            <button className="btn4">от еще</button>
+          </div>
+          </Col>
           <Col xs={4}>
             <div>
               <FormControl sx={{ m: 1, width: 300 }}>
@@ -85,37 +109,57 @@ const Bnavbar = () => {
       <div className="sectioncategory">
         <Container>
           <Row className="mb-5 mt-5">
-           {carts.map((item) => (
-             <Col xs={4} className="mb-2">
-             <Card style={{ width: "25rem", textAlign: "center", position:"relative" }}>
-               <i class="fa-regular fa-heart"></i>
-               <Card.Img variant="top" src={item.img} alt="" className="img1" />
-               <Card.Body>
-                 <Card.Title
-                   style={{ fontSize: "18px", fontWeight: "300" }}
-                   className="titlecategory"
-                 >
-                   {item.name}
-                 </Card.Title>
-                 <Card.Text
-                   style={{ fontSize: "30px", fontWeight: "700" }}
-                   className="price"
-                 >
-                   {item.price}
-                   {item.net}
-                 </Card.Text>
-               </Card.Body>
-               <Card.Body>
-                 <i
-                   style={{}}
-                   className="fa-solid fa-cart-shopping bucket"
-                 ></i>
-               </Card.Body>
-             </Card>
-           </Col>
-           ))}
+            {slice.map((item) => (
+              <Col xs={4} className="mb-2">
+                <Card
+                  className="cartCategory"
+                  style={{
+                    width: "25rem",
+                    textAlign: "center",
+                    position: "relative",
+                  }}
+                >
+                  <i class="fa-regular fa-heart heart1"></i>
+                  <Card.Img
+                    variant="top"
+                    src={item.img}
+                    alt=""
+                    className="img1"
+                  />
+                  <Card.Body>
+                    <Card.Title
+                      style={{ fontSize: "18px", fontWeight: "300" }}
+                      className="titlecategory"
+                    >
+                      {item.name}
+                    </Card.Title>
+                    <Card.Text
+                      style={{ fontSize: "30px", fontWeight: "700" }}
+                      className="price1"
+                    >
+                      {item.price}
+                      {item.net}
+                      <h4>{item.message}</h4>
+                    </Card.Text>
+                  </Card.Body>
+                  <Card.Body>
+                    <i
+                      style={{ position: "absolute" }}
+                      className="fa-solid fa-cart-shopping bucket"
+                    ></i>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
           </Row>
         </Container>
+
+        <button
+          onClick={() => loadMore()}
+          className="btn btn-dark d-block w-100 mb-5"
+        >
+          See more
+        </button>
       </div>
     </>
   );
