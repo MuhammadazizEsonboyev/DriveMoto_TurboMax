@@ -1,0 +1,50 @@
+.cards{
+    border: 1px solid #CDCDCD;
+    border-radius: 3px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.cardsImg{
+    padding: 20px 20px 15px 20px;
+    
+}
+
+.cardsText{
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #2F3035;
+}
+
+.CardsPrice{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #2F3035;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.btnCard{
+    background: #1C62CD;
+    border-radius: 10px 0px 0px 0px;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 255px;
+    
+}
+
+.cardsLikee{
+   color: black; 
+   margin-top: 20px;
+   margin-left: 220px;
+}
