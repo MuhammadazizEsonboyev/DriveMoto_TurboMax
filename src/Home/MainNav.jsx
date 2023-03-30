@@ -9,7 +9,7 @@ import Card from "././Nav/image/Card.svg";
 import { products } from "././Nav/DataName";
 import './Nav/NavbarPage.css'
 
-export default function MainNav() {
+export default function MainNav({size}) {
   return (
     <div>
       <nav id="nav-asad">

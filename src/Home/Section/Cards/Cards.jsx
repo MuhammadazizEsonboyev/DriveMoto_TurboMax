@@ -13,8 +13,8 @@ const Cards = ({ item, handleClick }) => {
         <img src={likee} alt='' className='cardsLikee' />
         <img src={item?.item?.img} alt='' className='cardsImg' />
         <p className='cardsText'>{item?.item?.title}</p>
-        <h4 className='CardsPrice'>{item?.item?.price}</h4>
-        <button onClick={() => handleClick(item?.item?.item)} className='btnCard'>
+        <h4 className='CardsPrice'>{item?.item?.price} ₽ </h4>
+        <button onClick={() => handleClick(item?.item)} className='btnCard'>
           <img src={card} alt='' />
         </button>
       </div>

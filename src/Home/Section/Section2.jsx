@@ -1,10 +1,12 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import Cards from './Cards/Cards'
+import CardList from './Cards/CardList'
 const motor1 = require("../Footer/img/motor1.png")
 const motor2 = require("../Footer/img/motor2.png")
 
-const Section2 = () => {
+
+const Section2 = ({ handleClick }) => {
   return (
     <>
       <Container>
@@ -47,18 +49,20 @@ const Section2 = () => {
       </Container>
       <Container>
       <Row className='justify-content-center'>
-        <Col xs={3}>
-        <Cards />
-        </Col>
-        <Col xs={3}>
-        <Cards />
-        </Col>
-        <Col xs={3}>
-        <Cards />
-        </Col>
-        <Col xs={3}>
-        <Cards />
-        </Col>
+      {CardList?.map(item => {
+        // console.log(item);
+        return (
+          <>
+           
+                <Col xs={3}>
+                  <Cards item={{item}} key={item.id} handleClick={handleClick} />
+                </Col>
+              
+          </>
+        )
+      })}
+       
+        
         
       </Row>
     </Container>

@@ -8,7 +8,7 @@ import engine from "./image/engine.svg";
 import { motion } from "framer-motion";
 // import MainNav from "../MainNav";
 
-export default function navbarPage() {
+export default function navbarPage({size}) {
   return (
     <div>
       {/* <Container>

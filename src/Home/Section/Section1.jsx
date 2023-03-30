@@ -3,7 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import Cards from './Cards/Cards'
 import CardData from './Cards/CardNames'
 
-const Section1 = ({ item, handleClick }) => {
+const Section1 = ({ handleClick }) => {
   return (
     <>
       <Container>
@@ -21,21 +21,22 @@ const Section1 = ({ item, handleClick }) => {
           </Col>
         </Row>
       </Container>
-
+      <Container>
+              <Row className='justify-content-center'>
       {CardData?.map(item => {
         // console.log(item);
         return (
           <>
-            <Container>
-              <Row className='justify-content-center'>
+           
                 <Col xs={3}>
                   <Cards item={{item}} key={item.id} handleClick={handleClick} />
                 </Col>
-              </Row>
-            </Container>
+              
           </>
         )
       })}
+      </Row>
+            </Container>
     </>
   )
 }
