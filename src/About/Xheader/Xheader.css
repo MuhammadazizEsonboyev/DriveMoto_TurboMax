@@ -140,4 +140,10 @@ opacity: 0.7;
   .section_xurshid {
     display: grid;
   }
+
+  .xurshid_section{
+    flex-wrap: wrap;
+    width: 10%;
+    height: 700px;
+  }
 }

@@ -1,9 +1,12 @@
 import React from "react";
 import { Button, Col, Container, Nav, Navbar, Row } from "react-bootstrap";
 
+
 import "./Xheader.css";
 
-export default function Xheader(props) {
+export default function Xheader() {
+
+
   
     const data = [
       {
@@ -35,7 +38,7 @@ export default function Xheader(props) {
         raqam: 0,
       },
     ];
- 
+
   
   
 
@@ -44,6 +47,7 @@ export default function Xheader(props) {
 
   return (
     <>
+    
       <section className="xurshid">
         <Container>
           <Row>
@@ -67,13 +71,18 @@ export default function Xheader(props) {
             <Col xs={6}>
               <div className="xurshid_input">
                 <h6 className="xurshid_h6">Магазин</h6>
+    <div className='text-end' >
+
                 <input
                   type="text"
                   className="xurshid_input_input"
                   placeholder="Введите название магазина"
+                  
+                
 
                 
                 />
+                </div>
               </div>
             </Col>
             <Col xs={2}>
@@ -106,12 +115,13 @@ export default function Xheader(props) {
             </div>
           </Row>
           <Row className="mt-5">
-            {/* <div className="xurshid_section1"> */}
+           
             {data.map(({ name, vaqt, bil,raqam }) => (
               <>
                <div className="xurshidbek_div" >
+              
                <Col xs={3}>
-                  <h5 className="xurshid_section1" >{name}</h5>
+                  <h5 className="xurshid_section1">{name}</h5>
                 </Col>
                 <Col xs={3}>
                   <h5 className="xurshid_section1">{vaqt}</h5>
@@ -122,7 +132,7 @@ export default function Xheader(props) {
                 <Col xs={3}>
                   <h5 className="xurshid_section1">{raqam}</h5>
                 </Col>
-                {/* </div> */}
+               
                 <Col xs={1}>
                   <Button  variant="primary">КУПИТЬ</Button>
                 </Col>
@@ -138,47 +148,3 @@ export default function Xheader(props) {
   );
 }
 
-// import React, { useState } from "react";
-// import { Col, Container, Form, Row, Table } from "react-bootstrap";
-
-// export default function Xheader() {
-//   const arr = ["uzbekistan", "russia"];
-
-//   const [value,setValue] = useState()
-
-//   console.log(value);
-
-//   return (
-//     <div>
-//       <Container>
-//         <Row className="justify-content-center mt-5">
-//           <Col xs={6}>
-//             <Form.Control placeholder="Disabled input" onChange={(e) => setValue(e.target.value)} />
-//             <Table striped bordered hover className="mt-5" >
-//               <thead >
-//                 <tr>
-//                   <th>#</th>
-//                   <th>First Name</th>
-//                 </tr>
-//               </thead>
-//               <tbody>
-//                {arr.filter((el) => {
-//                 return el.toLocaleLowerCase === "" ? value : el.toLocaleLowerCase().includes(value)
-//                }).map((item,index) => {
-//                 return(
-//                   <>
-//                    <tr>
-//                   <td>{index}</td>
-//                   <td>{item}</td>
-//                 </tr>
-//                   </>
-//                 )
-//                })}
-//               </tbody>
-//             </Table>
-//           </Col>
-//         </Row>
-//       </Container>
-//     </div>
-//   );
-// }
