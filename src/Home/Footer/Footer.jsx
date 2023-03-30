@@ -2,9 +2,7 @@
 import React, { useState } from 'react'
 import { Carousel, Col, Container, Row } from 'react-bootstrap'
 import "./footerMotor.css"
-const motor1 = require("./img/motor1.png")
 const rasm = require("./img/rasm.png")
-const motor2 = require("./img/motor2.png")
 
 export default function FooterPage() {
 
@@ -17,46 +15,7 @@ export default function FooterPage() {
 
   return (
     <>
-      <Container>
-        <Row>
-          <Col xs={12}>
-            <div className="boxBlue">
-              <div className="imagesMotors">
-                <img src={motor1} alt="" />
-                <img src={motor2} alt="" />
-              </div>
 
-              <div className="textSaleMoto">
-                <h2 className="motoText">CКИДКИ <br />
-                  на все запчасти <br />
-                  до 70%</h2>
-              </div>
-
-              <div className="trackBtn">
-                <button className="button_motor">ПОСМОТЕТЬ ВСЕ</button>
-              </div>
-            </div>
-
-          </Col>
-        </Row>
-      </Container>
-
-
-      <Container>
-        <Row>
-          <Col xs={8}>
-            <h2 className="textFooter">С этим товаром покупают</h2>
-            <ul className="list_footer">
-              <li className="list_item_footer">запчасти</li>
-              <li className="list_item_footer">моторы</li>
-              <li className="list_item_footer">шины </li>
-              <li className="list_item_footer">электроника</li>
-              <li className="list_item_footer">инструменты</li>
-              <li className="list_item_footer">аксессуары</li>
-            </ul>
-          </Col>
-        </Row>
-      </Container>
 
       <Container>
         <Row>

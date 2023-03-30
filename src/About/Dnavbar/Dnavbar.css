@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#nav-market {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #2F3035;
+    padding: 30px 30px;
+}
+
+
+#Navbar-box {
+    display: flex;
+}
+
+#logo {
+    padding: 0px 30px;
+}
+
+#nav-adress {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #2F3035;
+    padding-right: 200px;
+    padding: 30px 0px;
+}
+
+#navigation {
+    margin: 25px 10px 10px 0px;
+}
+
+#profile-box {
+    margin: 20px 10px 10px 180px;
+}
+
+#nav-category-box {
+    background: #F0F0F4;
+}
+
+
+#category-box {
+    display: flex;
+    justify-content: center;
+}
+
+#category-name {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #2F3035;
+    padding: 10px 40px;
+    border: none;
+    list-style: none;
+}
+
+#category-name:hover {
+    cursor: pointer;
+    border-bottom: 3px solid #317def;
+    transition: 0.1s;
+    font-size: 24px;
+    color: #2F3035;
+}
+
+.sale {
+    height: 44px;
+    width: 100px;
+    color: #F0F0F4;
+    margin-top: 35px;
+    background: #1C62CD;
+    border-radius: 3px;
+    border: none;
+}
+
+.glavnya {
+    margin-top: -40px;
+    font-family: 'SF Pro Display';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #C4C4C4;
+}
+
+.price {
+    font-size: 21px;
+    left: 559px;
+    top: 750px;
+    height: 21px;
+    border: 1px solid #46474c;
+    opacity: 0.6;
+    border: none;
+    font-size: 25px;
+    text-decoration: line-through;
+}
+
+.price1 {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #2F3035;
+}
+
+.narhlar {
+    text-align: center;
+}
+
+.nashli {
+    font-family: 'SF Pro Display';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    color: #1C62CD;
+}
+
+.gidrosikl {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #2F3035;
+    margin-top: 35px;
+}
+
+.kod {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #2F3035;
+    opacity: 0.6;
+    margin-bottom: 23px;
+}
+
+.obshe {
+    display: flex;
+    gap: 20px;
+}
+
+.harakter {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2F3035;
+}
+
+.nachnali {
+    display: flex;
+    gap: 60px;
+    margin-top: 30px;
+
+}
+
+.Наличие {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2F3035;
+    opacity: 0.6;
+}
+
+.xarakter {
+    font-family: 'SF Pro Display';
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 24px;
+    color: #000000;
+}
+
+#otabobo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.haraktee {
+    display: flex;
+    gap: 90px;
+    margin-top: 30px;
+}
+
+.prozod {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2F3035;
+
+}
+
+.link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: underline;
+    color: #1C62CD;
+    margin-top: 25px;
+}
+
+.chiziq {
+    position: absolute;
+    width: 436px;
+    margin-top: -9px;
+    height: 0px;
+    opacity: 0.1;
+    border: 1px solid #2F3035;
+}
+
+.kupit {
+    width: 177px;
+    height: 50px;
+    margin-top: 40px;
+    background: #1C62CD;
+    border-radius: 3px;
+    color: aliceblue;
+    border: none;
+}
+
+.start :hover {
+    color: #005eec;
+    background-color: #005eec;
+}
+
+
+@media(max-width:500px) {
+
+    #otabobo {
+        display: grid;
+        margin-left: 10px;
+        overflow-x: hidden;
+    }
+
+    .imgfs {
+        width: 200px;
+    }
+
+    .start {
+        width: 15px !important;
+        height: 15px !important;
+    }
+
+    .like {
+
+        margin-top: 10px;
+        width: 15px !important;
+        height: 15px !important;
+    }
+
+    .prozod {
+        font-size: 10px;
+    }
+
+    .nachnali {
+        display: grid;
+    }
+
+    .sale {
+        display: none;
+    }
+
+    .kupit {
+        width: 110% !important;
+        height: 30px;
+    }
+
+    .haraktee {
+        display: none;
+    }
+
+    .gidrosikl {
+        width: 288px;
+        height: 48px;
+        left: 10px;
+        top: 179px;
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: #2F3035;
+    }
+    .glavnya {
+        width: 283px;
+        height: 18px;
+         left: 10px;
+        top: 121px; 
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: #000000;
+    }
+    .nashli {
+        font-family: 'SF Pro Display';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #1C62CD;
+        width: 230px;
+    }
+
+    .price2 {
+        width: 189px;
+        height: 48px;
+        left: 66px;
+        top: 670px;
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 48px;
+        text-align: center;
+        color: #2F3035;
+    }
+    .price {
+        width: 142px;
+        height: 18px;
+        text-align: center;
+
+    }
+}

@@ -1,0 +1,85 @@
+.bucket {
+  position: absolute;
+  background: #1c62cd;
+  border-radius: 10px 0px 0px 0px;
+  padding: 7px 9px 10px 15px;
+  right: 0;
+  bottom: 0;
+  color: rgb(159, 156, 156);
+}
+.sectioncategory {
+  position: relative;
+}
+.heart1 {
+  color: gray;
+  margin-left: 330px;
+  cursor: pointer;
+}
+.price1:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+.titlecategory:hover {
+  color: blue;
+  cursor: pointer;
+}
+.img1:hover {
+  width: 410px;
+  transition: 0.5s;
+}
+.btn1 {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #2f3035;
+  opacity: 0.7;
+  background: #f0f0f4;
+  border-radius: 3px;
+  padding: 4px 28px;
+  border: none;
+
+}
+
+.btn2 {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #2f3035;
+  opacity: 0.7;
+  background: #f0f0f4;
+  border-radius: 3px;
+  margin-left: 9px;
+  border: none;
+  padding: 4px 28px;
+}
+.btn3 {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #2f3035;
+  opacity: 0.7;
+  background: #f0f0f4;
+  border-radius: 3px;
+  padding: 4px 28px;
+  margin-left: 9px;
+  border: none;
+
+}
+.btn4 {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #2f3035;
+  opacity: 0.7;
+  background: #f0f0f4;
+  border-radius: 3px;
+  padding: 4px 15px;
+  margin-left: 9px;
+  border: none;
+
+}
