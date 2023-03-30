@@ -7,6 +7,7 @@ import navigation from "././Nav/image/navigation.svg";
 import Like from "././Nav/image/Like.svg";
 import Card from "././Nav/image/Card.svg";
 import { products } from "././Nav/DataName";
+import './Nav/NavbarPage.css'
 
 export default function MainNav() {
   return (

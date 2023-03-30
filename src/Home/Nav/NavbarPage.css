@@ -48,7 +48,8 @@ body {
     margin: 0px 10px 10px 0px;
 }
 #profile-box {
-    margin-left: 70px;
+    /* margin-left: 70px; */
+    margin: 0px 10px 10px 130px;
 }
 
 #nav-category-box {
