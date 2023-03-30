@@ -11,7 +11,7 @@ function App() {
     <>
    
       <Router>
-        {/* <MainNav/> */}
+        <MainNav/>
         <Routes>
           <Route path="/home" element={<AppOne />} />
           <Route path="/category" element={<AppTwo />} />
