@@ -86,6 +86,12 @@ body {
     border-radius: 3px;
     outline: none;
     border: none;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2F3035;
 }
 
 
@@ -111,7 +117,6 @@ body {
     height: 130px;
     margin: 30px 0px 0px 0px;
     transition: 0.3s;
-
 }
 
 #firstImg:hover {
@@ -174,8 +179,103 @@ body {
 }
 
 #fourtImg:hover {
-    width: 215px;
+    width: 205px;
     transition: 0.3s;
     margin-top: 25px;
     height: 140px;
+}
+
+
+@media screen and (max-width:576px) {
+
+    #search {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        padding: 5px;
+        margin: 0;
+        color: #2F3035;
+        transition: .8s;
+        -webkit-transition: .8s;
+        -moz-transition: .8s;
+        -ms-transition: .8s;
+        -o-transition: .8s;
+    }
+
+    #search:hover {
+        transition: .8s;
+        color: #2F3035;
+    }
+
+
+    #search-btn {
+        position: absolute;
+        right: 0;
+        padding: 13px 25px;
+        /* background: #1C62CD; */
+        border-radius: 3px;
+        border: none;
+        color: #fff;
+        /* text-transform: uppercase; */
+    }
+
+    #mark {
+        height: 50px;
+        position: absolute;
+        padding: 5px 10px;
+        width: 100%;
+        background: #F0F0F4;
+        border-radius: 3px;
+        outline: none;
+        border: none;
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #070708;
+    }
+
+
+    #firstImg {
+        width: 120px;
+        height: 120px;
+        margin: 30px 0px 0px 20px;
+        transition: 0.3s;
+    }
+    
+    #firstImg:hover {
+        width: 140px;
+        transition: 0.3s;
+        margin-top: 25px;
+        height: 140px;
+    }
+
+    #thirdImg {
+        width: 170px;
+        height: 120px;
+        margin: 20px 0px 0px 30px;
+        transition: 0.3s;
+    }
+    
+    #thirdImg:hover {
+        width: 190px;
+        transition: 0.3s;
+        margin-top: 15px;
+        height: 140px;
+    }
+
+    #fourtImg {
+        width: 150px;
+        height: 130px;
+        margin: 30px 0px 0px 25px;
+        transition: 0.3s;
+    }
+    
+    #fourtImg:hover {
+        width: 165px;
+        transition: 0.3s;
+        margin-top: 25px;
+        height: 140px;
+    }
 }

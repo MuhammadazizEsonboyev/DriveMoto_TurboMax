@@ -19,21 +19,19 @@ export default function FooterPage() {
     <>
       <Container>
         <Row>
-          <Col xs={12}>
+          <Col xs={12} lg={12} className='d-block d-sm-block'>
             <div className="boxBlue">
-              <div className="imagesMotors">
-                <img src={motor1} alt="" />
-                <img src={motor2} alt="" />
-              </div>
-
               <div className="textSaleMoto">
-                <h2 className="motoText">CКИДКИ <br />
-                  на все запчасти <br />
-                  до 70%</h2>
+                <h2 className="motoText">CКИДКИ на все запчасти <br /> до 70%</h2>
               </div>
 
-              <div className="trackBtn">
+              <div className="imagesMotors">
+                <img src={motor1} alt="" id='motor1'/>
                 <button className="button_motor">ПОСМОТЕТЬ ВСЕ</button>
+                <img src={motor2} alt="" id='motor2' />
+              </div>
+              
+              <div className="trackBtn">
               </div>
             </div>
 
