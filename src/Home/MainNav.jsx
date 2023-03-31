@@ -9,7 +9,7 @@ import Card from "././Nav/image/Card.svg";
 import { products } from "././Nav/DataName";
 import './Nav/NavbarPage.css'
 
-export default function MainNav({size}) {
+export default function MainNav({ size }) {
   return (
     <div>
       <nav id="nav-asad">
@@ -34,7 +34,10 @@ export default function MainNav({size}) {
                 <div id="profile-box">
                   <img src={Like} alt="" />
                   <ModalNav />
-                  <img src={Card} alt="" />
+                  <Link to="/cart">
+                    <img src={Card} alt="" />
+                    <span>{size}</span>
+                  </Link>
                 </div>
               </div>
             </Col>

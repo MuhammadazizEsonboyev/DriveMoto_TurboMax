@@ -4,7 +4,7 @@ const card = require('./image/VectorCards.png')
 const likee = require('./image/VectorLike.png')
 
 const Cards = ({ item, handleClick }) => {
-  
+
 
 
   return (
