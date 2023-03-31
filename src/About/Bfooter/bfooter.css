@@ -293,3 +293,64 @@
     width: 180px;
     margin: auto;
 }
+
+.list_b{
+    margin-top: 15px;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 18px;
+}
+
+
+.brobek{
+    display: none;
+    
+}
+
+
+
+@media (max-width: 575px ){
+    .behruznone{
+        display: none;
+    }
+    .bobrdobr{
+        margin-left: 30px;
+    }
+    .list_itemb {
+        margin-top: 15px;
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 18px;
+        display: none;
+    }
+    .holtib {
+        text-align: center;
+    }
+    .footinb{
+        align-items: center;
+        margin-left: 40px;
+    }
+    .listftb{
+        display: none;
+    }
+    .mgshopb{
+        display: none;
+    }
+    #infob{
+        display: none;
+    }
+    #mgagash{
+        display: none;
+    }
+    .iconsfoterb{
+        margin-left: 50px;
+    }
+    .brobek{
+        display: block;
+        margin-top: -80px;
+    }
+}
