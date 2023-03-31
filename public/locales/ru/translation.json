@@ -15,5 +15,13 @@
         "EngineBoat":"Лодочный мотор Suzuki DF9.9BRS",
         "promotion":"Акция действует до"
 
+    },
+    "category":{
+        "jet":"Гидроциклы",
+        "full":"Полноприводные",
+        "from":"от 5000",
+        "more":"Oт еще",
+        "popularity":"По популярности",
+        "ski":"Гидроцикл BRP Sea Doo GTI 130 hp SE BlackMangoПо популярности"
     }
 }
