@@ -96,13 +96,13 @@ console.log(get);
             <Col xs={2}>
               <div className="div_xurshid_1">
                 <input type="radio" name="b" />
-                <h6 className="xurshid1_h6">Забрать сегодня</h6>
+                <h6 className="xurshid1_h6">{t("about.xurshidbek_checked")}</h6>
               </div>
             </Col>
             <Col xs={3}>
               <div className="div_xurshid_2">
                 <input type="radio" name="b" />
-                <h6 className="xurshid2_h6">Забрать в течение недели</h6>
+                <h6 className="xurshid2_h6">{t("about.xurshidbek_checked1")}</h6>
               </div>
             </Col>
           </Row>
