@@ -12,8 +12,8 @@ export default function Xheader() {
     {
       id: 1,
       name: `${t("about.xurshidbek_name")}`,
-      vaqt: `${("about.xurshidbek_vaqt")}   08:00-19:00`,
-      bil: "В наличии",
+      vaqt: `пн  сб 08:00-19:00`,
+      bil: `${t("about.xurshidbek_bil")}`,
       raqam: 1,
     },
     // {
