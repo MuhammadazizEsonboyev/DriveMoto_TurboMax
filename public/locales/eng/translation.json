@@ -27,5 +27,13 @@
         "ATV":"Atvs",
         "Engines":"Engines",
         "about":"Read more"
+    },
+    "category":{
+        "jet" :"Jet skis",
+        "full":"All-wheel drive",
+        "from":"From 5000",
+        "more":"From more",
+        "popularity":"Popularity",
+        "ski":"Jet ski BRP Sea Doo GTI 130 hp SE BlackMangoBy popularity"
     }
 }

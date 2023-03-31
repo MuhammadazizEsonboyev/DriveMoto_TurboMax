@@ -1,4 +1,6 @@
 {
+    
+
     "text": {
         "choose":"Tilni Tanlang",
         "Magazine":"Jurnallar",
@@ -26,6 +28,14 @@
         "Snowmobiles":"Snegohody",
         "ATV":"Vezdehody",
         "Engines":"Dvigateli",
-        "about":"Ko'proq o'qish "
-    }
+        "about":"Ko'proq o'qish"
+    },
+  "category": {
+    "jet":"Reaktiv ski",
+    "full":"To'liq g'ildirakli haydovchi",
+    "from":"5000 dan",
+    "more":"Ko'proq",
+    "popularity":"Mashhurlik",
+    "ski":"Jet ski BRP Sea Doo GTI 130 ot kuchi SE BlackMango Mashhurligi bilan"
+  }
 }
