@@ -80,7 +80,7 @@ console.log(get);
           <Row>
             <Col xs={6}>
               <div className="xurshid_input">
-                <h6 className="xurshid_h6">Магазин</h6>
+                <h6 className="xurshid_h6">{t("about.xurshidbek_shop")}</h6>
 
 
                 <div className="text-end">
@@ -88,7 +88,7 @@ console.log(get);
                   onChange={(e) => setGet(e.target.value)}
                     type="text"
                     className="xurshid_input_input"
-                    placeholder="Введите название магазина"
+                    placeholder={t("about.xurshidbek_input")}
                   />
                 </div>
               </div>
