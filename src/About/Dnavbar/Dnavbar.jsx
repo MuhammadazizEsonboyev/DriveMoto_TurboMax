@@ -2,12 +2,12 @@ import React from 'react'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import StarOutlineIcon from '@mui/icons-material/StarOutline';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-import PersonIcon from '@mui/icons-material/Person';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import MenuIcon from '@mui/icons-material/Menu';
+// import LocationOnIcon from '@mui/icons-material/LocationOn';
+// import PersonIcon from '@mui/icons-material/Person';
+// import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+// import MenuIcon from '@mui/icons-material/Menu';
 import qayq from '../img/qayiq.png'
-import logo from '../img/logo.svg'
+// import logo from '../img/logo.svg'
 import '../Dnavbar/Dnavbar.css'
 
 const products = [
@@ -24,7 +24,7 @@ const products = [
 const Dnavbar = () => {
     return (
         <div className='md:container md:mx-auto sm:truncate ' >
-            <div>
+            {/* <div>
                 <nav >
                     <div className="'hidden ml-4">
                         <div className="flex gap-[18px]">
@@ -94,7 +94,7 @@ const Dnavbar = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             <div id="container mx-auto px-4">
                 <container className='mr-17  ml-[70px]'>
