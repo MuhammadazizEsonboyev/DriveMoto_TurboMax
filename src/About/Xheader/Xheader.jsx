@@ -109,16 +109,16 @@ console.log(get);
           <Row className="mt-5">
             <div className="xurshid_section">
               <Col md={3}>
-                <h5 className="adres">Адрес</h5>
+                <h5 className="adres">{t("about.xurshidbek_manzil")}</h5>
               </Col>
               <Col md={3} xs={12}>
-                <h5>Режим работы</h5>
+                <h5>{t("about.xurshidbek_ish_tartibi")}</h5>
               </Col>
               <Col md={2} xs={12}>
-                <h5>Доступно</h5>
+                <h5>{t("about.xurshidbek_mavjud")}</h5>
               </Col>
               <Col md={2} xs={12}>
-                <h5 xs={12}>Количество</h5>
+                <h5 xs={12}>{t("about.xurshidbek_miqdor")}</h5>
               </Col>
             </div>
           </Row>
