@@ -34,7 +34,7 @@
         "from":"от 5000",
         "more":"Oт еще",
         "popularity":"По популярности",
-        "ski":"Гидроцикл BRP Sea Doo GTI 130 hp SE BlackMangoПо популярности",
+       
         "see":"Подровее",
         "footersearch":"Подпишитесь на нашу рассылку и узнавайте о акция быстрее",
         "email":"Введите ваш e-mail:",
@@ -49,7 +49,12 @@
         "pay":"Оплата",
         "return":"Возврат-обмен",
         "news":"Новостии"
-        "ski":"Гидроцикл BRP Sea Doo GTI 130 hp SE BlackMangoПо популярности"
+        
+
+    },
+    "about":{
+        "xurshidbek_nav1":"О товаре"
+
     }
         
 }
