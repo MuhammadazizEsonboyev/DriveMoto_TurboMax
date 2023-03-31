@@ -24,9 +24,10 @@
   color: blue;
   cursor: pointer;
 }
-.img1:hover {
-  width: 410px;
+.cartCategory:hover{
+  transform: translateY(-50px);
   transition: 0.5s;
+  box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
 }
 .btn1 {
   font-family: "SF Pro Display";
@@ -82,4 +83,13 @@
   margin-left: 9px;
   border: none;
 
+}
+.get{
+  padding: 10px 50px;
+  border-radius: 10px;
+  border: none;
+  background:#f0f0f4;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  cursor: pointer;
 }
