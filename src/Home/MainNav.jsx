@@ -7,7 +7,6 @@ import PersonIcon from '@mui/icons-material/Person';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import MenuIcon from '@mui/icons-material/Menu';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-// import { products } from "././Nav/DataName";
 import './Nav/NavbarPage.css'
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
@@ -52,9 +51,9 @@ export default function MainNav({ size }) {
                             <a href="*"><LocationOnIcon />  Регистрация</a>
                             <a href="*"><FavoriteBorderIcon />  Избранное</a>
                             <a href="*"><ShoppingCartIcon />  Корзина</a>
-                            <a href="*">rus</a>
-                            <a href="*">eng</a>
-                            <a href="*"> uzb</a>
+                            <a href="#action/3.1" onClick={() => handleClick("ru")}>Russian</a>
+                            <a href="#action/3.2" onClick={() => handleClick("uzb")}>Uzbek</a>
+                            <a href="#action/3.3" onClick={() => handleClick("eng")}> English</a>
                           </div>
                         </div>
                       </div>
