@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import AppThree from "./About/AppThree";
 import AppTwo from "./Category/AppTwo";
+import AppThree from "./About/AppThree";
 import AppOne from "./Home/AppOne";
-import FooterPage from "./Home/Footer/Footer";
 import MainNav from "./Home/MainNav";
 import Cart from "./Home/Section/Cards/Cart";
 import "./index.css";
@@ -39,7 +38,7 @@ function App() {
           <Route path="/about" element={<AppThree />} />
           <Route path="/cart" element={<Cart cart={cart} setCart={setCart} handleChange={handleChange} />} />
         </Routes>
-        <FooterPage />
+        {/* <FooterPage /> */}
       </Router>
     </>
   );
