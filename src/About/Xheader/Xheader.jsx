@@ -3,15 +3,15 @@ import { Button, Col, Container, Nav, Navbar, Row } from "react-bootstrap";
 import { useState } from "react";
 
 import "./Xheader.css";
-// import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 export default function Xheader() {
-  // const { t } = useTranslation()
+  const { t } = useTranslation()
 
   const data = [
     {
       id: 1,
-      name: "vvvvhtt7d",
+      name: "Москва, ул.  Южная 134",
       vaqt: "пн-сб:   08:00-19:00",
       bil: "В наличии",
       raqam: 1,
@@ -49,10 +49,10 @@ console.log(get);
               <div className="section_xurshid">
                 <Navbar className="xurshid_nav">
                   <Container>
-                    <Col md={1} xs={12}>
-                      <Nav.Link>О товаре</Nav.Link>
+                    <Col md={2} xs={12}>
+                      <Nav.Link className="xurshidbek_nav_1">{t("about.xurshidbek_nav1")}</Nav.Link>
                     </Col>
-                    <Col md={1} xs={12}>
+                    <Col md={2} xs={12}>
                       <Nav.Link>Характеристики</Nav.Link>
                     </Col>
                     <Col md={1} xs={12}>
