@@ -1,17 +1,13 @@
 import React from "react";
 import { Col, Container, NavDropdown, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-// import ModalNav from "././Nav/Modal";
 import logo from "././Nav/image/лого.svg";
-// import navigation from "././Nav/image/navigation.svg";
-// import Like from "././Nav/image/Like.svg";
-// import Card from "././Nav/image/Card.svg";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PersonIcon from '@mui/icons-material/Person';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import MenuIcon from '@mui/icons-material/Menu';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import { products } from "././Nav/DataName";
+// import { products } from "././Nav/DataName";
 import './Nav/NavbarPage.css'
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
@@ -99,7 +95,7 @@ export default function MainNav({ size }) {
                     </div>
                   </div>
                 </div>
-                
+
               </div>
             </nav>
             <div id="nav-category-box">
