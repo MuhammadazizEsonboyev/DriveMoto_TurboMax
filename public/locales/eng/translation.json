@@ -12,8 +12,21 @@
         "Snegohody": "Snowmobiles",
         "Engine": "Engine",
         "SpareParts": "Spareparts",
-        "EngineBoat":"Boat Motor Suzuki DF9.9BRS",
-        "promotion":"The promotion is valid until"
+        "EngineBoat": "Boat Motor Suzuki DF9.9BRS",
+        "promotion": "The promotion is valid until",
+        "phoneNum": "Search by number",
+        "brande": "Search by brand",
+        "name": "Search by product name",
+        "rate": "Search by rating",
+        "search": "Enter brand",
+        "btnSearch": "Search",
+        "ATVs":"ATVs",
+        "jetskis":"jet skis",
+        "boats":"Boats",
+        "Snowmobiles":"Snowmobiles",
+        "ATV":"Atvs",
+        "Engines":"Engines",
+        "about":"Read more"
     },
     "category":{
         "jet" :"Jet skis",
@@ -36,5 +49,9 @@
         "pay":"Payment",
         "return":"Return-exchange",
         "news":"News"
+        "ski":"Jet ski BRP Sea Doo GTI 130 hp SE BlackMangoBy popularity"
+    },
+    "about":{
+        
     }
 }

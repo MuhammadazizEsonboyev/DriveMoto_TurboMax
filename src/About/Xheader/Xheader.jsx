@@ -1,9 +1,45 @@
 import React from "react";
 import { Button, Col, Container, Nav, Navbar, Row } from "react-bootstrap";
+import { useState } from "react";
 
 import "./Xheader.css";
+// import { useTranslation } from "react-i18next";
 
 export default function Xheader() {
+  // const { t } = useTranslation()
+
+  const data = [
+    {
+      id: 1,
+      name: "vvvvhtt7d",
+      vaqt: "пн-сб:   08:00-19:00",
+      bil: "В наличии",
+      raqam: 1,
+    },
+    // {
+    //   id: 2,
+    //   name: "Москва, ул.  Южная 134",
+    //   vaqt: "пн-сб:   08:00-19:00",
+    //   bil: "В наличии",
+    //   raqam: 2,
+    // },
+    // {
+    //   id: 3,
+    //   name: "Санкт-Петербург, ул. Красная 19",
+    //   vaqt: "пн-сб:   08:00-19:00",
+    //   bil: "Нет в наличии",
+    //   raqam: 0,
+    // },
+    // {
+    //   id: 4,
+    //   name: "Санкт-Петербург, ул. Красная 19",
+    //   vaqt: "пн-сб:   08:00-19:00",
+    //   bil: "Нет в наличии",
+    //   raqam: 0,
+    // },
+  ];
+const [get, setGet] = useState('')
+console.log(get);
   return (
     <>
       <section className="xurshid">
@@ -13,13 +49,29 @@ export default function Xheader() {
               <div className="section_xurshid">
                 <Navbar className="xurshid_nav">
                   <Container>
-                    <Nav.Link>О товаре</Nav.Link>
-                    <Nav.Link>Характеристики</Nav.Link>
-                    <Nav.Link>Отзывы</Nav.Link>
-                    <Nav.Link>Самовывоз</Nav.Link>
-                    <Nav.Link>Доставка</Nav.Link>
-                    <Nav.Link>Cервис</Nav.Link>
-                    <Nav.Link>Гарантия</Nav.Link>
+                    <Col md={1} xs={12}>
+                      <Nav.Link>О товаре</Nav.Link>
+                    </Col>
+                    <Col md={1} xs={12}>
+                      <Nav.Link>Характеристики</Nav.Link>
+                    </Col>
+                    <Col md={1} xs={12}>
+                      <Nav.Link>Отзывы</Nav.Link>
+                    </Col>
+                    <Col md={1} xs={12}>
+                      <Nav.Link>Самовывоз</Nav.Link>
+                    </Col>
+
+                    <Col md={1} xs={12}>
+                      <Nav.Link>Доставка</Nav.Link>
+                    </Col>
+                    <Col md={1} xs={12}>
+                      <Nav.Link>Cервис</Nav.Link>
+                    </Col>
+
+                    <Col md={1} xs={12}>
+                      <Nav.Link>Гарантия</Nav.Link>
+                    </Col>
                   </Container>
                 </Navbar>
               </div>
@@ -29,11 +81,16 @@ export default function Xheader() {
             <Col xs={6}>
               <div className="xurshid_input">
                 <h6 className="xurshid_h6">Магазин</h6>
-                <input
-                  type="text"
-                  className="xurshid_input_input"
-                  placeholder="Введите название магазина"
-                />
+
+
+                <div className="text-end">
+                  <input
+                  onChange={(e) => setGet(e.target.value)}
+                    type="text"
+                    className="xurshid_input_input"
+                    placeholder="Введите название магазина"
+                  />
+                </div>
               </div>
             </Col>
             <Col xs={2}>
@@ -49,133 +106,52 @@ export default function Xheader() {
               </div>
             </Col>
           </Row>
-          <Row  className="mt-5">
+          <Row className="mt-5">
             <div className="xurshid_section">
-             <Col xs={3}>
-              <h5>Адрес</h5>
-             </Col>
-             <Col xs={3}>
-              <h5>Режим работы</h5>
-             </Col>
-             <Col xs={2}>
-              <h5>Доступно</h5>
-             </Col>
-             <Col xs={2}>
-              <h5>Количество</h5>
-             </Col>
-            
+              <Col md={3}>
+                <h5 className="adres">Адрес</h5>
+              </Col>
+              <Col md={3} xs={12}>
+                <h5>Режим работы</h5>
+              </Col>
+              <Col md={2} xs={12}>
+                <h5>Доступно</h5>
+              </Col>
+              <Col md={2} xs={12}>
+                <h5 xs={12}>Количество</h5>
+              </Col>
             </div>
           </Row>
-          <Row  className="mt-5">
-            {/* <div className="xurshid_section1"> */}
-             <Col xs={3}>
-              <h5  className="xurshid_section1">Москва, ул. Науки 25</h5>
-             </Col>
-             <Col xs={3}>
-              <h5 className="xurshid_section1">пн-сб:   08:00-19:00</h5>
-             </Col>
-             <Col xs={2}>
-              <h5 className="xurshid_section1">В наличии</h5>
-             </Col>
-             <Col xs={3}>
-              <h5 className="xurshid_section1">1</h5>
-             </Col>
-            {/* </div> */}
-             <Col xs={1}>
-             <Button variant="primary">КУПИТЬ</Button>
-             </Col>
-            
-          </Row>
+          <Row className="mt-5">
+            {data.filter((item) => {
+              return get.toLowerCase() === '' ? item : item.name.toLowerCase( ).includes(get)
+            }).map(({ name, vaqt, bil, raqam }) => (
+              <>
+                <div className="xurshidbek_div">
+                  <Col md={3} xs={12}>
+                    <h5 className="xurshid_section1">{name}</h5>
+                  </Col>
+                  <Col md={3} xs={12}>
+                    <h5 className="xurshid_section1">{vaqt}</h5>
+                  </Col>
+                  <Col md={2} xs={12}>
+                    <h5 className="xurshid_section1">{bil}</h5>
+                  </Col>
+                  <Col md={3} xs={12}>
+                    <h5 className="xurshid_section1">{raqam}</h5>
+                  </Col>
 
-          <Row  className="mt-5">
-            {/* <div className="xurshid_section1"> */}
-             <Col xs={3}>
-              <h5  className="xurshid_section1">Москва, ул. Науки 25</h5>
-             </Col>
-             <Col xs={3}>
-              <h5 className="xurshid_section1">пн-сб:   08:00-19:00</h5>
-             </Col>
-             <Col xs={2}>
-              <h5 className="xurshid_section1">В наличии</h5>
-             </Col>
-             <Col xs={3}>
-              <h5 className="xurshid_section1">1</h5>
-             </Col>
-            {/* </div> */}
-             <Col xs={1}>
-             <Button variant="primary">КУПИТЬ</Button>
-             </Col>
-            
+                  <Col md={1} xs={12}>
+                    <Button variant="primary" className="xurshidbek_button">
+                      КУПИТЬ
+                    </Button>
+                  </Col>
+                </div>
+              </>
+            ))}
           </Row>
-
-          <Row  className="mt-5">
-            {/* <div className="xurshid_section1"> */}
-             <Col xs={3}>
-              <h5  className="xurshid_section1">Москва, ул. Науки 25</h5>
-             </Col>
-             <Col xs={3}>
-              <h5 className="xurshid_section1">пн-сб:   08:00-19:00</h5>
-             </Col>
-             <Col xs={2}>
-              <h5 className="xurshid_section1">В наличии</h5>
-             </Col>
-             <Col xs={3}>
-              <h5 className="xurshid_section1">1</h5>
-             </Col>
-            {/* </div> */}
-             <Col xs={1}>
-             <Button variant="primary">КУПИТЬ</Button>
-             </Col>
-            
-          </Row>
-
         </Container>
       </section>
     </>
   );
 }
-
-// import React, { useState } from "react";
-// import { Col, Container, Form, Row, Table } from "react-bootstrap";
-
-// export default function Xheader() {
-//   const arr = ["uzbekistan", "russia"];
-
-//   const [value,setValue] = useState()
-
-//   console.log(value);
-
-//   return (
-//     <div>
-//       <Container>
-//         <Row className="justify-content-center mt-5">
-//           <Col xs={6}>
-//             <Form.Control placeholder="Disabled input" onChange={(e) => setValue(e.target.value)} />
-//             <Table striped bordered hover className="mt-5" >
-//               <thead >
-//                 <tr>
-//                   <th>#</th>
-//                   <th>First Name</th>
-//                 </tr>
-//               </thead>
-//               <tbody>
-//                {arr.filter((el) => {
-//                 return el.toLocaleLowerCase === "" ? value : el.toLocaleLowerCase().includes(value)
-//                }).map((item,index) => {
-//                 return(
-//                   <>
-//                    <tr>
-//                   <td>{index}</td>
-//                   <td>{item}</td>
-//                 </tr>
-//                   </>
-//                 )
-//                })}
-//               </tbody>
-//             </Table>
-//           </Col>
-//         </Row>
-//       </Container>
-//     </div>
-//   );
-// }

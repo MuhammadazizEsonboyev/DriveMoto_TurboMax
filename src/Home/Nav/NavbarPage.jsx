@@ -5,7 +5,6 @@ import Carousel from "react-bootstrap/Carousel";
 import RubleFirst from "./image/icons8-рубль-50.svg";
 import RubleSec from "./image/icons8-рубль-50 (1).svg";
 import { motion } from "framer-motion";
-// import { useTranslation } from "react-i18next";
 import engine from "./image/engine.svg";
 import { useTranslation } from "react-i18next";
 
