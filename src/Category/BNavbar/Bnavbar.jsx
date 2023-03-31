@@ -8,6 +8,7 @@ import FormControl from '@mui/material/FormControl'
 import Select from '@mui/material/Select'
 import { carts } from '../DynamicCard'
 import '..//Category.css'
+import { useTranslation } from "react-i18next";
 const ITEM_HEIGHT = 48
 const ITEM_PADDING_TOP = 8
 const MenuProps = {
@@ -18,6 +19,7 @@ const MenuProps = {
     }
   }
 }
+
 
 const names = ['Our product', 'About it', 'Prices']
 
@@ -52,13 +54,15 @@ const Bnavbar = () => {
   const loadMore = () => {
     setNoElement(noOfelement + noOfelement)
   }
+
+  const { t } = useTranslation()
   return (
     <>
       <Container>
         <Row>
           <Col xs={3}>
             <br />
-            <h3>Гидроциклы</h3>
+            <h3>{t("category.jet")}</h3>
           </Col>
         </Row>
       </Container>
@@ -67,10 +71,10 @@ const Bnavbar = () => {
         <Row className='justify-content-between'>
           <Col xs={7}>
             <div style={{ gap: '20px' }} className='big'>
-              <button className='btn1'>Полноприводные</button>
-              <button className='btn2'>от 5000</button>
+              <button className='btn1'>{t("category.full")}</button>
+              <button className='btn2'>{t("category.from")}</button>
               <button className='btn3'>BRP</button>
-              <button className='btn4'>от еще</button>
+              <button className='btn4'>{t("category.more")}</button>
             </div>
           </Col>
           <Col xs={4}>
@@ -80,7 +84,7 @@ const Bnavbar = () => {
                   style={{ paddingLeft: '50px' }}
                   id='demo-multiple-name-label'
                 >
-                  По полулярности
+                  {t("category.popularity")}
                 </InputLabel>
                 <Select
                   labelId='demo-multiple-name-label'
