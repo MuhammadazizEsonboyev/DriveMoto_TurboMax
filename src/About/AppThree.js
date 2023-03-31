@@ -6,9 +6,9 @@ import Xheader from './Xheader/Xheader'
 export default function AppThree() {
   return (
     <>
-    <Dnavbar  />
-    {/* <Xheader/>
-    <Bfooter/> */}
+    {/* <Dnavbar  /> */}
+    <Xheader/>
+    {/* <Bfooter/> */}
     </>
   )
 }

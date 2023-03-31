@@ -12,27 +12,27 @@ export default function Xheader() {
       bil: "В наличии",
       raqam: 1,
     },
-    {
-      id: 2,
-      name: "Москва, ул.  Южная 134",
-      vaqt: "пн-сб:   08:00-19:00",
-      bil: "В наличии",
-      raqam: 2,
-    },
-    {
-      id: 3,
-      name: "Санкт-Петербург, ул. Красная 19",
-      vaqt: "пн-сб:   08:00-19:00",
-      bil: "Нет в наличии",
-      raqam: 0,
-    },
-    {
-      id: 4,
-      name: "Санкт-Петербург, ул. Красная 19",
-      vaqt: "пн-сб:   08:00-19:00",
-      bil: "Нет в наличии",
-      raqam: 0,
-    },
+    // {
+    //   id: 2,
+    //   name: "Москва, ул.  Южная 134",
+    //   vaqt: "пн-сб:   08:00-19:00",
+    //   bil: "В наличии",
+    //   raqam: 2,
+    // },
+    // {
+    //   id: 3,
+    //   name: "Санкт-Петербург, ул. Красная 19",
+    //   vaqt: "пн-сб:   08:00-19:00",
+    //   bil: "Нет в наличии",
+    //   raqam: 0,
+    // },
+    // {
+    //   id: 4,
+    //   name: "Санкт-Петербург, ул. Красная 19",
+    //   vaqt: "пн-сб:   08:00-19:00",
+    //   bil: "Нет в наличии",
+    //   raqam: 0,
+    // },
   ];
 
   return (
@@ -84,17 +84,19 @@ export default function Xheader() {
           </Row>
           <Row className="mt-5">
             <div className="xurshid_section">
-              <Col xs={3}>
-                <h5>Адрес</h5>
+              <Col md={3} >
+              
+              <h5 className="adres">Адрес</h5>
+             
               </Col>
-              <Col xs={3}>
+              <Col md={3} xs={12}>
                 <h5>Режим работы</h5>
               </Col>
-              <Col xs={2}>
+              <Col md={2} xs={12}>
                 <h5>Доступно</h5>
               </Col>
-              <Col xs={2}>
-                <h5>Количество</h5>
+              <Col md={2} xs={12}>
+                <h5 xs={12}>Количество</h5>
               </Col>
             </div>
           </Row>
@@ -102,21 +104,21 @@ export default function Xheader() {
             {data.map(({ name, vaqt, bil, raqam }) => (
               <>
                 <div className="xurshidbek_div">
-                  <Col xs={3}>
+                  <Col  md={3} xs={12}>
                     <h5 className="xurshid_section1">{name}</h5>
                   </Col>
-                  <Col xs={3}>
+                  <Col md={3} xs={12}>
                     <h5 className="xurshid_section1">{vaqt}</h5>
                   </Col>
-                  <Col xs={2}>
+                  <Col md={2} xs={12}>
                     <h5 className="xurshid_section1">{bil}</h5>
                   </Col>
-                  <Col xs={3}>
+                  <Col md={3} xs={12}>
                     <h5 className="xurshid_section1">{raqam}</h5>
                   </Col>
 
-                  <Col xs={1}>
-                    <Button variant="primary">КУПИТЬ</Button>
+                  <Col md={1} xs={12}>
+                    <Button variant="primary" className="xurshidbek_button">КУПИТЬ</Button>
                   </Col>
                 </div>
               </>
