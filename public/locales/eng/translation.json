@@ -1,5 +1,18 @@
 {
     "text": {
-       
+        "choose": "Choose The Language",
+        "Magazine": "Markets",
+        "Stock": "Sale",
+        "Delivery": "Delivery and payment",
+        "QuadBike": "Bike",
+        "Katera": "ATVs",
+        "Hydrocyclically": "Jet Skis",
+        "Lodki": "Boats",
+        "Vezdexhody": "ATVs",
+        "Snegohody": "Snowmobiles",
+        "Engine": "Engine",
+        "SpareParts": "Spareparts",
+        "EngineBoat":"Boat Motor Suzuki DF9.9BRS",
+        "promotion":"The promotion is valid until"
     }
 }

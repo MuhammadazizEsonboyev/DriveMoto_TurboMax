@@ -1,6 +1,19 @@
 {
     "text": {
-
+        "choose":"Bыберите Язык",
+        "Magazine":"Магазины",
+        "Stock":"Акции",
+        "Delivery" :"Доставка и оплата",       
+        "QuadBike":"Квадроциклы",
+        "Katera":"Катера",
+        "Hydrocyclically":"Гидроциклы",
+        "Lodki":"Лодки",
+        "Vezdexhody":"Вездеходы",
+        "Snegohody":"Снегоходы",
+        "Engine":"Двигатели",
+        "SpareParts":"Запчасти",
+        "EngineBoat":"Лодочный мотор Suzuki DF9.9BRS",
+        "promotion":"Акция действует до"
 
     }
 }
