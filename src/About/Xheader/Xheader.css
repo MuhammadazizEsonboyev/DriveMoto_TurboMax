@@ -123,6 +123,7 @@ font-weight: 400;
 font-size: 16px;
 line-height: 19px;
 
+
 /* Основной текст */
 
 color: #2F3035;
@@ -142,22 +143,23 @@ opacity: 0.7;
   }
 
   .xurshid_nav{
-   
-    display: none;
+    width: 100%;
+    flex-wrap: wrap;
+    
   }
 
   .xurshid_input{
     margin-top: 20px;
   }
   .div_xurshid_1{
-    margin-top: 74px;
+    margin-top: 105px;
     margin-left: -176px;
   }
   .div_xurshid_2{
     
     width: 226px;
-    margin-left: -67px;
-    margin-top: 73px;
+    margin-left: -237px;
+    margin-top: 143px;
   }
   .xurshid_section{
     width: 100%;
@@ -172,7 +174,16 @@ opacity: 0.7;
 
  .xurshidbek_button{
   margin-top: 41px;
-    width: 501px;
+    width: 306px;
     margin-left: -163px;
+ }
+
+ .xurshid_input_input{
+  margin-top: 27px;
+    margin-left: -71px;
+ }
+
+ .xurshid_nav{
+  background: none
  }
 }

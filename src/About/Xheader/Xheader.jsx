@@ -2,8 +2,11 @@ import React from "react";
 import { Button, Col, Container, Nav, Navbar, Row } from "react-bootstrap";
 
 import "./Xheader.css";
+import { useTranslation } from "react-i18next";
 
 export default function Xheader() {
+  const { t } = useTranslation()
+
   const data = [
     {
       id: 1,
@@ -44,13 +47,29 @@ export default function Xheader() {
               <div className="section_xurshid">
                 <Navbar className="xurshid_nav">
                   <Container>
-                    <Nav.Link>О товаре</Nav.Link>
-                    <Nav.Link>Характеристики</Nav.Link>
-                    <Nav.Link>Отзывы</Nav.Link>
-                    <Nav.Link>Самовывоз</Nav.Link>
-                    <Nav.Link>Доставка</Nav.Link>
-                    <Nav.Link>Cервис</Nav.Link>
-                    <Nav.Link>Гарантия</Nav.Link>
+                    <Col md={1} xs={12}>
+                      <Nav.Link>О товаре</Nav.Link>
+                    </Col>
+                    <Col md={1} xs={12}>
+                      <Nav.Link>Характеристики</Nav.Link>
+                    </Col>
+                    <Col md={1} xs={12}>
+                      <Nav.Link>Отзывы</Nav.Link>
+                    </Col>
+                    <Col md={1} xs={12}>
+                      <Nav.Link>Самовывоз</Nav.Link>
+                    </Col>
+
+                    <Col md={1} xs={12}>
+                      <Nav.Link>Доставка</Nav.Link>
+                    </Col>
+                    <Col md={1} xs={12}>
+                      <Nav.Link>Cервис</Nav.Link>
+                    </Col>
+
+                    <Col md={1} xs={12}>
+                      <Nav.Link>Гарантия</Nav.Link>
+                    </Col>
                   </Container>
                 </Navbar>
               </div>
@@ -84,10 +103,8 @@ export default function Xheader() {
           </Row>
           <Row className="mt-5">
             <div className="xurshid_section">
-              <Col md={3} >
-              
-              <h5 className="adres">Адрес</h5>
-             
+              <Col md={3}>
+                <h5 className="adres">Адрес</h5>
               </Col>
               <Col md={3} xs={12}>
                 <h5>Режим работы</h5>
@@ -104,7 +121,7 @@ export default function Xheader() {
             {data.map(({ name, vaqt, bil, raqam }) => (
               <>
                 <div className="xurshidbek_div">
-                  <Col  md={3} xs={12}>
+                  <Col md={3} xs={12}>
                     <h5 className="xurshid_section1">{name}</h5>
                   </Col>
                   <Col md={3} xs={12}>
@@ -118,7 +135,9 @@ export default function Xheader() {
                   </Col>
 
                   <Col md={1} xs={12}>
-                    <Button variant="primary" className="xurshidbek_button">КУПИТЬ</Button>
+                    <Button variant="primary" className="xurshidbek_button">
+                      КУПИТЬ
+                    </Button>
                   </Col>
                 </div>
               </>
