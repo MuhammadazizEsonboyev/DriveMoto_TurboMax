@@ -1,15 +1,35 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, NavDropdown, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import ModalNav from "././Nav/Modal";
 import logo from "././Nav/image/лого.svg";
 import navigation from "././Nav/image/navigation.svg";
 import Like from "././Nav/image/Like.svg";
 import Card from "././Nav/image/Card.svg";
-import { products } from "././Nav/DataName";
+// import { products } from "././Nav/DataName";
 import './Nav/NavbarPage.css'
+import i18next from "i18next";
+import { useTranslation } from "react-i18next";
 
-export default function MainNav({ size }) {
+
+export default function MainNav({size}) {
+  const { t } = useTranslation()
+
+  const handleClick = (value) => {
+    i18next.changeLanguage(value)
+  }
+
+
+  const products = [
+    { name: `${t("text.QuadBike")}`, search: "Поиск по  номеру", },
+    { name: `${t("text.Katera")}`, search: "Поиск по марке", to: "/category" },
+    { name: `${t("text.Hydrocyclically")}`, search: "Поиск по названию товара", to: "/about" },
+    { name: `${t("text.Lodki")}`, search: "Поиск по рейтингу", to: "/home" },
+    { name: `${t("text.Vezdexhody")}`, search: "" },
+    { name: `${t("text.Snegohody")}`, search: "" },
+    { name: `${t("text.Engine")}`, search: "" },
+    { name: `${t("text.SpareParts")}`, search: "" },
+  ]
   return (
     <div>
       <nav id="nav-asad">
@@ -17,9 +37,16 @@ export default function MainNav({ size }) {
           <Row className="justify-content-center">
             <Col xs={5} lg={5} className='d-none d-sm-block'>
               <div id="Navbar-box">
-                <h4 id="nav-market">Магазины</h4>
-                <h4 id="nav-market">Акции</h4>
-                <h4 id="nav-market">Доставка и оплата</h4>
+                <h4 id="nav-market">
+                  <NavDropdown title={t("text.choose")} style={{ color: "black" }} id="collasible-nav-dropdown">
+                  <NavDropdown.Item href="#action/3.1" onClick={() => handleClick("ru")}>Russian</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.2" onClick={() => handleClick("uzb")}> Uzbek</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.3" onClick={() => handleClick("eng")}>English</NavDropdown.Item>
+                </NavDropdown>
+                </h4>
+                <h4 id="nav-market">{t("text.Stock")}</h4>
+                <h4 id="nav-market">{t("text.Delivery")}</h4>
+
               </div>
             </Col>
             <Col xs={2} className='d-none d-sm-block'>

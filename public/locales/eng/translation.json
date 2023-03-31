@@ -1,5 +1,42 @@
 {
     "text": {
-       
+        "choose": "Choose The Language",
+        "Magazine": "Markets",
+        "Stock": "Sale",
+        "Delivery": "Delivery and payment",
+        "QuadBike": "Bike",
+        "Katera": "ATVs",
+        "Hydrocyclically": "Jet Skis",
+        "Lodki": "Boats",
+        "Vezdexhody": "ATVs",
+        "Snegohody": "Snowmobiles",
+        "Engine": "Engine",
+        "SpareParts": "Spareparts",
+        "EngineBoat": "Boat Motor Suzuki DF9.9BRS",
+        "promotion": "The promotion is valid until",
+        "phoneNum": "Search by number",
+        "brande": "Search by brand",
+        "name": "Search by product name",
+        "rate": "Search by rating",
+        "search": "Enter brand",
+        "btnSearch": "Search",
+        "ATVs":"ATVs",
+        "jetskis":"jet skis",
+        "boats":"Boats",
+        "Snowmobiles":"Snowmobiles",
+        "ATV":"Atvs",
+        "Engines":"Engines",
+        "about":"Read more"
+    },
+    "category":{
+        "jet" :"Jet skis",
+        "full":"All-wheel drive",
+        "from":"From 5000",
+        "more":"From more",
+        "popularity":"Popularity",
+        "ski":"Jet ski BRP Sea Doo GTI 130 hp SE BlackMangoBy popularity"
+    },
+    "about":{
+        
     }
 }

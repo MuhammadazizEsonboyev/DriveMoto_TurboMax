@@ -38,7 +38,6 @@ function App() {
           <Route path="/category" element={<AppTwo />} />
           <Route path="/about" element={<AppThree />} />
           <Route path="/cart" element={<Cart cart={cart} setCart={setCart} handleChange={handleChange} />} />
-
         </Routes>
         <FooterPage />
       </Router>

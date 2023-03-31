@@ -4,64 +4,15 @@ import "./NavbarPage.css";
 import Carousel from "react-bootstrap/Carousel";
 import RubleFirst from "./image/icons8-рубль-50.svg";
 import RubleSec from "./image/icons8-рубль-50 (1).svg";
-import engine from "./image/engine.svg";
 import { motion } from "framer-motion";
-// import MainNav from "../MainNav";
+import engine from "./image/engine.svg";
+import { useTranslation } from "react-i18next";
 
-export default function navbarPage({size}) {
+
+export default function NavbarPage({size}) {
+  const { t } = useTranslation()
   return (
     <div>
-      {/* <Container>
-        <Row className='justify-content-center'>
-         
-        <Col xs={12} lg={12} className='d-block d-sm-none'>
-        </Col>
-
-          <Col xs={5} className='d-none d-sm-block'>
-            <div id='Navbar-box'>
-              <h4 id='nav-market'>Магазины</h4>
-              <h4 id='nav-market'>Акции</h4>
-              <h4 id='nav-market'>Доставка и оплата</h4>
-            </div>
-          </Col>
-
-          <Col xs={2} className='d-none d-sm-block'>
-            <motion.img src={logo} alt="svg" id='logo'
-              initial={{
-                x: 100,
-                opacity: 0
-              }}
-              animate={{
-                x: 0,
-                opacity: 1
-              }}
-              transition={{
-                delay: 0.5
-              }}
-            />
-          </Col>
-
-          <Col xs={3} lg={5} className='d-none d-sm-block' >
-            <div id='Navbar-box'>
-              <img src={navigation} alt="svg" id='navigation-img' />
-              <h4 id='nav-adress' >Москва,  ул. Науки  25</h4>
-
-              <div id='profile-box'>
-                <img src={Like} alt=""
-
-                />
-
-                <ModalNav />
-                <img src={Card} alt=""
-                />
-              </div>
-            </div>
-          </Col>
-        </Row>
-      </Container> */}
-
-     
-
       <div id="advertisement-box">
         <Container>
           <Row>
@@ -193,12 +144,11 @@ export default function navbarPage({size}) {
 
                 <img src={engine} id="engine" alt="" />
                 <h1 id="engine-info">
-                  Лодочный мотор <br />
-                  Suzuki DF9.9BRS
+                  {t("text.EngineBoat")}
                 </h1>
 
                 <div id="date-box">
-                  <h2 id="date-till">Акция действует до</h2>
+                  <h2 id="date-till">{t("text.promotion")}</h2>
                   <h1 id="date">31.08.2020</h1>
                 </div>
               </motion.div>
