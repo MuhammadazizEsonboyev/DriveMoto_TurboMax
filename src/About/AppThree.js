@@ -7,8 +7,8 @@ export default function AppThree() {
   return (
     <>
     <Dnavbar  />
-    <Xheader/>
-    <Bfooter/>
+    {/* <Xheader/>
+    <Bfooter/> */}
     </>
   )
 }
