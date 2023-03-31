@@ -136,7 +136,7 @@ const Bnavbar = () => {
                       <Card
                         className="cartCategory"
                         style={{
-                          width: "25rem",
+                          width: "20rem",
                           textAlign: "center",
                           position: "relative",
                         }}

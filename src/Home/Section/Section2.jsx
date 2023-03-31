@@ -2,7 +2,7 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import Cards from './Cards/Cards'
 import CardList from './Cards/CardList'
-import Bfooter from '../../About/Bfooter/Bfooter'
+// import Bfooter from '../../About/Bfooter/Bfooter'
 const motor1 = require("../Footer/img/motor1.png")
 const motor2 = require("../Footer/img/motor2.png")
 
@@ -68,7 +68,7 @@ const Section2 = ({ handleClick }) => {
       </Row>
     </Container>
 
-    <Bfooter/>
+    {/* <Bfooter/> */}
     </>
   )
 }
