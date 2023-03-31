@@ -127,7 +127,7 @@ const Bnavbar = () => {
               .filter((item) => {
                 return getValue.toLocaleLowerCase() === ""
                   ? item
-                  : item.name.toLowerCase().includes(getValue);
+                  : item.name.toLowerCase() && item.product.toLowerCase().includes(getValue);
               })
               .map((item) => {
                 return (
@@ -136,7 +136,7 @@ const Bnavbar = () => {
                       <Card
                         className="cartCategory"
                         style={{
-                          width: "25rem",
+                          width: "20rem",
                           textAlign: "center",
                           position: "relative",
                         }}
@@ -161,6 +161,7 @@ const Bnavbar = () => {
                           >
                             {item?.price}
                             {item?.net}
+                            <h1>{item?.product}</h1>
                             <h4>{item?.message}</h4>
                           </Card.Text>
                         </Card.Body>
