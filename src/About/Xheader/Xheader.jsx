@@ -11,8 +11,8 @@ export default function Xheader() {
   const data = [
     {
       id: 1,
-      name: "Москва, ул.  Южная 134",
-      vaqt: "пн-сб:   08:00-19:00",
+      name: `${t("about.xurshidbek_name")}`,
+      vaqt: `${("about.xurshidbek_vaqt")}   08:00-19:00`,
       bil: "В наличии",
       raqam: 1,
     },
