@@ -15,8 +15,6 @@ export default function FooterPage() {
 
   return (
     <>
-
-
       <Container>
         <Row>
           <Carousel activeIndex={index} onSelect={handleSelect}>
@@ -33,7 +31,6 @@ export default function FooterPage() {
                 </Carousel.Caption>
               </Carousel.Item>
             </Col>
-
           </Carousel>
         </Row>
       </Container>

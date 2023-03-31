@@ -11,6 +11,7 @@ import './Nav/NavbarPage.css'
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
 
+
 export default function MainNav({size}) {
   const { t } = useTranslation()
 
@@ -60,7 +61,10 @@ export default function MainNav({size}) {
                 <div id="profile-box">
                   <img src={Like} alt="" />
                   <ModalNav />
-                  <img src={Card} alt="" />
+                  <Link to="/cart">
+                    <img src={Card} alt="" />
+                    <span>{size}</span>
+                  </Link>
                 </div>
               </div>
             </Col>
