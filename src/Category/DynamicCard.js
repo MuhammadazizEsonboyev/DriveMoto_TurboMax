@@ -7,23 +7,23 @@ const img6 = require("./imagescategory/img6.png");
 
 export const carts = [
   {
-    name: "Гидроцикл BRP SeaDoo GTI 130hp SE BlackMango",
+    name: "Jet ski BRP Sea Doo GTI 130 hp SE BlackMangoBy popularity",
     img: img1,
     price: "1 049 500 ₽",
     link: "Гидроцикл BRP SeaDoo GTR 230hp X California green ",
   },
   {
-    name: "Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic",
+    name: "Jet ski BRP SeaDoo GTI 155hp SE Long Blue Metallic",
     img: img2,
     price: "1 100 475 ₽",
   },
   {
-    name: "Гидроцикл BRP SeaDoo GTR 230hp X California green ",
+    name: "Jet ski BRP SeaDoo GTI 155hp GTR 230hp X California green ",
     img: img3,
     price: "1 323 700 ₽",
   },
   {
-    name: "Гидроцикл BRP SeaDoo GTI 130hp SE ",
+    name: "Jet ski BRP SeaDoo GTI 155hp  SE ",
     img: img4,
     see: "Сообщить о поступлении",
     net: "нет в наличии",

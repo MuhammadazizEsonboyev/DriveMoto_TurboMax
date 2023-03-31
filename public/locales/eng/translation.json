@@ -34,7 +34,22 @@
         "from":"From 5000",
         "more":"From more",
         "popularity":"Popularity",
-        "ski":"Jet ski BRP Sea Doo GTI 130 hp SE BlackMangoBy popularity"
+        "ski":"Jet ski BRP Sea Doo GTI 130 hp SE BlackMangoBy popularity",
+        "see":"See more",
+        "footersearch":"Subscribe to our newsletter and learn about the promotion faster",
+        "email":"Enter your e-mail:",
+        "send":"Send",
+        "inform":"Information",
+        "company":"About company",
+        "contact":"Contact",
+        "stock":"Stock",
+        "shop":"Shop",
+        "online":"Online store",
+        "delivery":"Delivery and pickup",
+        "pay":"Payment",
+        "return":"Return-exchange",
+        "news":"News"
+       
     },
     "about":{
         "xurshidbek_nav1":"About the product",
