@@ -7,6 +7,7 @@ export default function AppTwo() {
     <div>
       <Bnavbar/>
       <Bfooter/>
+  
     </div>
   )
 }
