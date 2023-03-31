@@ -11,7 +11,7 @@ import './Nav/NavbarPage.css'
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
 
-export default function MainNav() {
+export default function MainNav({size}) {
   const { t } = useTranslation()
 
   const handleClick = (value) => {

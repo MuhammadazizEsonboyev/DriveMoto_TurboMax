@@ -10,7 +10,7 @@ import engine from "./image/engine.svg";
 import { useTranslation } from "react-i18next";
 
 
-export default function NavbarPage() {
+export default function NavbarPage({size}) {
   const { t } = useTranslation()
   return (
     <div>
