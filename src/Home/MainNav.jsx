@@ -99,6 +99,7 @@ export default function MainNav({ size }) {
                     </div>
                   </div>
                 </div>
+                
               </div>
             </nav>
             <div id="nav-category-box">
