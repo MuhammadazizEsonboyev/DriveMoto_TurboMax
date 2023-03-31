@@ -9,8 +9,10 @@ import thirdImg from './image/boat_PNG36 1.svg'
 import fourtImg from './image/rmvector551 1.svg'
 import fifthImg from './image/2018-Maverick-X3-X-rc-TURBO-R-Carbon-Black-and-Octane-Blue_3-4-front4072 1.svg'
 import sixtImg from './image/images 1.svg'
+import { useTranslation } from 'react-i18next'
 
-export default function header() {
+export default function Header() {
+  const {t} = useTranslation()
   return (
     <div>
       <Container>
@@ -31,31 +33,31 @@ export default function header() {
             >
 
               <button id='search-box'>
-                <h4 id="search">Поиск по  номеру</h4>
+                <h4 id="search">{t("text.phoneNum")}</h4>
               </button>
               <button id='search-box'>
-                <h4 id="search">Поиск по марке</h4>
+                <h4 id="search">{t("text.brande")}</h4>
               </button>
               <button id='search-box'>
-                <h4 id="search">Поиск по названию товара</h4>
+                <h4 id="search">{t("text.name")}</h4>
               </button>
 
               <button id='search-box'>
-                <h4 id="search">Поиск по рейтингу</h4>
+                <h4 id="search">{t("text.rate")}</h4>
               </button>
             </motion.div>
           </Col>
 
           <Col xs={4} lg={12} className='d-none d-sm-block'>
             <div id='inp-box'>
-              <input type="text" name="" id="mark" placeholder='Введите марку ' />
-              <button id='search-btn'>искать</button>
+              <input type="text" name="" id="mark" placeholder={t("text.search")} />
+              <button id='search-btn'>{t("text.btnSearch")}</button>
             </div>
           </Col>
 
           <Col xs={12} lg={12} className='d-block d-sm-none'>
             <div id='inp-box'>
-              <input type="text" name="" id="mark" placeholder='Введите марку ' />
+              <input type="text" name="" id="mark" placeholder={t("text.search")} />
               <button id='search-btn'>&#128269;</button>
             </div>
           </Col>
@@ -67,28 +69,31 @@ export default function header() {
           <Col xs={12} lg={4}  className="d-block d-sm-block">
             <div id='head-box'>
               <div id='title-box'>
-                <h3 id='model-name'>Квадроциклы</h3>
+                <h3 id='model-name'>{t("text.ATVs")}</h3>
                 <p id='model-info'>
                   Двигатель 649 см³ <br />
                   Длинная база <br />
                   Резина 26″ J level
                 </p>
-                <p id='about'>Подробее ➪</p>
+                <p id='about'>{t("text.about")} ➪</p>
               </div>
               <img src={firstImg} id="firstImg" alt="" />
             </div>
           </Col>
+
+
+
           <Col xs={12} lg={4} className="d-block d-sm-block">
             <div id='head-box'>
 
               <div id='title-box'>
-                <h3 id='model-name'>Гидроциклы</h3>
+                <h3 id='model-name'>{t("text.jetskis")}</h3>
                 <p id='model-info'>
                   Двигатель 649 см³ <br />
                   Длинная база <br />
                   Резина 26″ J level
                 </p>
-                <p id='about'>Подробее ➪</p>
+                <p id='about'>{t("text.about")} ➪</p>
               </div>
               <img src={secImg} id="firstImg" alt="" />
             </div>
@@ -98,13 +103,13 @@ export default function header() {
             <div id='head-box'>
 
               <div id='title-box'>
-                <h3 id='model-name'>Катера</h3>
+                <h3 id='model-name'>{t("text.boats")}</h3>
                 <p id='model-info'>
                   Двигатель 649 см³ <br />
                   Длинная база <br />
                   Резина 26″ J level
                 </p>
-                <p id='about'>Подробее ➪</p>
+                <p id='about'>{t("text.about")} ➪</p>
               </div>
               <img src={thirdImg} id="thirdImg" alt="" />
             </div>
@@ -116,13 +121,13 @@ export default function header() {
             <div id='head-box'>
 
               <div id='title-box'>
-                <h3 id='model-name'>Снегоходы</h3>
+                <h3 id='model-name'>{t("text.Snowmobiles")}</h3>
                 <p id='model-info'>
                   Двигатель 649 см³ <br />
                   Длинная база <br />
                   Резина 26″ J level
                 </p>
-                <p id='about'>Подробее ➪</p>
+                <p id='about'>{t("text.about")} ➪</p>
               </div>
               <img src={fourtImg} id="fourtImg" alt="" />
             </div>
@@ -132,13 +137,13 @@ export default function header() {
             <div id='head-box'>
 
               <div id='title-box'>
-                <h3 id='model-name'>Вездеходы</h3>
+                <h3 id='model-name'>{t("text.ATV")}</h3>
                 <p id='model-info'>
                   Двигатель 649 см³ <br />
                   Длинная база <br />
                   Резина 26″ J level
                 </p>
-                <p id='about'>Подробее ➪</p>
+                <p id='about'>{t("text.about")} ➪</p>
               </div>
               <img src={fifthImg} id="fourtImg" alt="" />
             </div>
@@ -148,13 +153,13 @@ export default function header() {
             <div id='head-box'>
 
               <div id='title-box'>
-                <h3 id='model-name'>Двигатели</h3>
+                <h3 id='model-name'>{t("text.Engines")}</h3>
                 <p id='model-info'>
                   Двигатель 649 см³ <br />
                   Длинная база <br />
                   Резина 26″ J level
                 </p>
-                <p id='about'>Подробее ➪</p>
+                <p id='about'>{t("text.about")} ➪</p>
               </div>
               <img src={sixtImg} id="fourtImg" alt="" />
             </div>

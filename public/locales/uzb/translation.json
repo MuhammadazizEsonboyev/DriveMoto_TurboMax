@@ -13,6 +13,19 @@
         "Engine":"Dvigatelar",
         "SpareParts":"Zapchasti",
         "EngineBoat":"Qayiq Motori Suzuki DF9.9BRS",
-        "promotion":"Aksiya shu  kungacha amal qiladi"
+        "promotion":"Aksiya shu  kungacha amal qiladi",
+        "phoneNum":"Raqam bo'yicha qidirish",
+        "brande":"Brend bo'yicha qidirish",
+        "name":"Mahsulot nomi bo'yicha qidirish",
+        "rate":"Reyting bo'yicha qidirish",
+        "search":"Brend qidirish",
+        "btnSearch":"Qidirish",
+        "ATVs":"Kvadrotsikli",
+        "jetskis":"Gidrotsikly",
+        "boats":"Qayiq",
+        "Snowmobiles":"Snegohody",
+        "ATV":"Vezdehody",
+        "Engines":"Dvigateli",
+        "about":"Ko'proq o'qish "
     }
 }
