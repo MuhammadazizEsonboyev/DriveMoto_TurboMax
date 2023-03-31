@@ -1,17 +1,18 @@
 import React from "react";
+import Xheader from "./About/Xheader/Xheader";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AppThree from "./About/AppThree";
 import AppTwo from "./Category/AppTwo";
 import AppOne from "./Home/AppOne";
-import MainNav from "./Home/MainNav";
+
 import "./index.css";
 
 function App() {
   return (
     <>
-   
+   <Xheader/>
       <Router>
-        {/* <MainNav/> */}
+     
         <Routes>
           <Route path="/home" element={<AppOne />} />
           <Route path="/category" element={<AppTwo />} />

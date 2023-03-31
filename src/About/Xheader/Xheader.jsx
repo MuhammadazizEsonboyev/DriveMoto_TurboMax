@@ -1,53 +1,42 @@
 import React from "react";
 import { Button, Col, Container, Nav, Navbar, Row } from "react-bootstrap";
 
-
 import "./Xheader.css";
 
 export default function Xheader() {
-
-
-  
-    const data = [
-      {
-        id: 1,
-        name: "Москва, ул. Науки 25",
-        vaqt: "пн-сб:   08:00-19:00",
-        bil: "В наличии",
-        raqam: 1,
-      },
-      {
-        id: 2,
-        name: "Москва, ул.  Южная 134",
-        vaqt: "пн-сб:   08:00-19:00",
-        bil: "В наличии",
-        raqam: 2,
-      },
-      {
-        id: 3,
-        name: "Санкт-Петербург, ул. Красная 19",
-        vaqt: "пн-сб:   08:00-19:00",
-        bil: "Нет в наличии",
-        raqam: 0,
-      },
-      {
-        id: 4,
-        name: "Санкт-Петербург, ул. Красная 19",
-        vaqt: "пн-сб:   08:00-19:00",
-        bil: "Нет в наличии",
-        raqam: 0,
-      },
-    ];
-
-  
-  
-
- 
-
+  const data = [
+    {
+      id: 1,
+      name: "Москва, ул. Науки 25",
+      vaqt: "пн-сб:   08:00-19:00",
+      bil: "В наличии",
+      raqam: 1,
+    },
+    {
+      id: 2,
+      name: "Москва, ул.  Южная 134",
+      vaqt: "пн-сб:   08:00-19:00",
+      bil: "В наличии",
+      raqam: 2,
+    },
+    {
+      id: 3,
+      name: "Санкт-Петербург, ул. Красная 19",
+      vaqt: "пн-сб:   08:00-19:00",
+      bil: "Нет в наличии",
+      raqam: 0,
+    },
+    {
+      id: 4,
+      name: "Санкт-Петербург, ул. Красная 19",
+      vaqt: "пн-сб:   08:00-19:00",
+      bil: "Нет в наличии",
+      raqam: 0,
+    },
+  ];
 
   return (
     <>
-    
       <section className="xurshid">
         <Container>
           <Row>
@@ -71,17 +60,12 @@ export default function Xheader() {
             <Col xs={6}>
               <div className="xurshid_input">
                 <h6 className="xurshid_h6">Магазин</h6>
-    <div className='text-end' >
-
-                <input
-                  type="text"
-                  className="xurshid_input_input"
-                  placeholder="Введите название магазина"
-                  
-                
-
-                
-                />
+                <div className="text-end">
+                  <input
+                    type="text"
+                    className="xurshid_input_input"
+                    placeholder="Введите название магазина"
+                  />
                 </div>
               </div>
             </Col>
@@ -115,36 +99,31 @@ export default function Xheader() {
             </div>
           </Row>
           <Row className="mt-5">
-           
-            {data.map(({ name, vaqt, bil,raqam }) => (
+            {data.map(({ name, vaqt, bil, raqam }) => (
               <>
-               <div className="xurshidbek_div" >
-              
-               <Col xs={3}>
-                  <h5 className="xurshid_section1">{name}</h5>
-                </Col>
-                <Col xs={3}>
-                  <h5 className="xurshid_section1">{vaqt}</h5>
-                </Col>
-                <Col xs={2}>
-                  <h5 className="xurshid_section1">{bil}</h5>
-                </Col>
-                <Col xs={3}>
-                  <h5 className="xurshid_section1">{raqam}</h5>
-                </Col>
-               
-                <Col xs={1}>
-                  <Button  variant="primary">КУПИТЬ</Button>
-                </Col>
-               </div>
+                <div className="xurshidbek_div">
+                  <Col xs={3}>
+                    <h5 className="xurshid_section1">{name}</h5>
+                  </Col>
+                  <Col xs={3}>
+                    <h5 className="xurshid_section1">{vaqt}</h5>
+                  </Col>
+                  <Col xs={2}>
+                    <h5 className="xurshid_section1">{bil}</h5>
+                  </Col>
+                  <Col xs={3}>
+                    <h5 className="xurshid_section1">{raqam}</h5>
+                  </Col>
+
+                  <Col xs={1}>
+                    <Button variant="primary">КУПИТЬ</Button>
+                  </Col>
+                </div>
               </>
             ))}
           </Row>
-
-         
         </Container>
       </section>
     </>
   );
 }
-

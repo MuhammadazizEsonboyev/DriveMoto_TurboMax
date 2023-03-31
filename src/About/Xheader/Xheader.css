@@ -141,9 +141,12 @@ opacity: 0.7;
     display: grid;
   }
 
-  .xurshid_section{
-    flex-wrap: wrap;
-    width: 10%;
-    height: 700px;
+  .xurshid_nav{
+   
+    display: none;
+  }
+
+  .xurshid_input{
+    margin-top: 20px;
   }
 }
