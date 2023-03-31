@@ -53,24 +53,24 @@ console.log(get);
                       <Nav.Link className="xurshidbek_nav_1">{t("about.xurshidbek_nav1")}</Nav.Link>
                     </Col>
                     <Col md={2} xs={12}>
-                      <Nav.Link>Характеристики</Nav.Link>
+                      <Nav.Link>{t("about.xurshidbek_nav2")}</Nav.Link>
                     </Col>
                     <Col md={1} xs={12}>
-                      <Nav.Link>Отзывы</Nav.Link>
+                      <Nav.Link>{t("about.xurshidbek_nav3")}</Nav.Link>
                     </Col>
                     <Col md={1} xs={12}>
-                      <Nav.Link>Самовывоз</Nav.Link>
-                    </Col>
-
-                    <Col md={1} xs={12}>
-                      <Nav.Link>Доставка</Nav.Link>
-                    </Col>
-                    <Col md={1} xs={12}>
-                      <Nav.Link>Cервис</Nav.Link>
+                      <Nav.Link>{t("about.xurshidbek_nav4")}</Nav.Link>
                     </Col>
 
                     <Col md={1} xs={12}>
-                      <Nav.Link>Гарантия</Nav.Link>
+                      <Nav.Link>{t("about.xurshidbek_nav5")}</Nav.Link>
+                    </Col>
+                    <Col md={1} xs={12}>
+                      <Nav.Link>{t("about.xurshidbek_nav6")}</Nav.Link>
+                    </Col>
+
+                    <Col md={1} xs={12}>
+                      <Nav.Link>{t("about.xurshidbek_nav7")}</Nav.Link>
                     </Col>
                   </Container>
                 </Navbar>

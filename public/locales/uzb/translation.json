@@ -51,6 +51,12 @@
     "news": "Yangiliklar"
   },
   "about": {
-    "xurshidbek_nav1": "Mahsulot haqida"
+    "xurshidbek_nav1":"Mahsulot haqida",
+        "xurshidbek_nav2":"Xususiyatlari",
+        "xurshidbek_nav3":"Sharhlar",
+        "xurshidbek_nav4":"ko'tarish",
+        "xurshidbek_nav5":"Yetkazib berish",
+        "xurshidbek_nav6":"Xizmat",
+        "xurshidbek_nav7":"Kafolat"
   }
 }

@@ -52,13 +52,15 @@
        
     },
     "about":{
-        "xurshidbek_nav1":"About the product",
-        "xurshidbek_nav2":"About the product",
-        "xurshidbek_nav3":"About the product",
-        "xurshidbek_nav4":"About the product",
-        "xurshidbek_nav5":"About the product",
-        "xurshidbek_nav6":"About the product",
-        "xurshidbek_nav7":"About the product"
+        "xurshidbek_nav1":"product",
+        "xurshidbek_nav2":"Characteristics",
+        "xurshidbek_nav3":"Reviews",
+        "xurshidbek_nav4":"Pickup",
+        "xurshidbek_nav5":"Delivery",
+        "xurshidbek_nav6":"Service",
+        "xurshidbek_nav7":"Guarantee",
+        "xurshidbek_shop":"Shop"
+
 
 
         
