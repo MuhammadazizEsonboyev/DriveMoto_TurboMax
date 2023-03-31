@@ -1,16 +1,17 @@
 import React from "react";
 import { Button, Col, Container, Nav, Navbar, Row } from "react-bootstrap";
+import { useState } from "react";
 
 import "./Xheader.css";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 
 export default function Xheader() {
-  const { t } = useTranslation()
+  // const { t } = useTranslation()
 
   const data = [
     {
       id: 1,
-      name: "Москва, ул. Науки 25",
+      name: "vvvvhtt7d",
       vaqt: "пн-сб:   08:00-19:00",
       bil: "В наличии",
       raqam: 1,
@@ -37,7 +38,8 @@ export default function Xheader() {
     //   raqam: 0,
     // },
   ];
-
+const [get, setGet] = useState('')
+console.log(get);
   return (
     <>
       <section className="xurshid">
@@ -79,8 +81,11 @@ export default function Xheader() {
             <Col xs={6}>
               <div className="xurshid_input">
                 <h6 className="xurshid_h6">Магазин</h6>
+
+
                 <div className="text-end">
                   <input
+                  onChange={(e) => setGet(e.target.value)}
                     type="text"
                     className="xurshid_input_input"
                     placeholder="Введите название магазина"
@@ -118,7 +123,9 @@ export default function Xheader() {
             </div>
           </Row>
           <Row className="mt-5">
-            {data.map(({ name, vaqt, bil, raqam }) => (
+            {data.filter((item) => {
+              return get.toLowerCase() === '' ? item : item.name.toLowerCase( ).includes(get)
+            }).map(({ name, vaqt, bil, raqam }) => (
               <>
                 <div className="xurshidbek_div">
                   <Col md={3} xs={12}>
