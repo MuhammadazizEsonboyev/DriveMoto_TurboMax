@@ -15,10 +15,13 @@
   /* Основной текст */
 
   color: #2f3035;
+  
 
   opacity: 0.6;
 }
-
+.xurshidbek_nav_1{
+  width: 700px;
+}
 .xurshid_h6 {
   font-family: "SF Pro Display";
   font-style: normal;

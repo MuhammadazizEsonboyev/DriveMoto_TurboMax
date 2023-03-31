@@ -29,14 +29,28 @@
         "about":"Ko'proq o'qish"
     },
   "category": {
-    "jet":"Reaktiv ski",
-    "full":"To'liq g'ildirakli haydovchi",
-    "from":"5000 dan",
-    "more":"Ko'proq",
-    "popularity":"Mashhurlik",
-    "ski":"Jet ski BRP Sea Doo GTI 130 ot kuchi SE BlackMango Mashhurligi bilan"
+    "jet": "Reaktiv ski",
+    "full": "To'liq g'ildirakli haydovchi",
+    "from": "5000 dan",
+    "more": "Ko'proq",
+    "popularity": "Mashhurlik",
+    "ski": "Jet ski BRP Sea Doo GTI 130 ot kuchi SE BlackMango Mashhurligi bilan",
+    "see": "Ko'proq ko'rish",
+    "footersearch": "Bizning yangiliklarimizga obuna bo'ling va reklama haqida tezroq bilib oling",
+    "email": "Elektron pochtangizni kiriting:",
+    "send": "Jo'natish",
+    "inform": "Informatsiya",
+    "company": "Kompaniya haqida",
+    "contact": "Bog'lanish",
+    "stock": "Aksiya",
+    "shop": "Do'konlar",
+    "online": "Onlayn do'kon",
+    "delivery": "Yetkazib berish va olib ketish",
+    "pay": "To'lov",
+    "return": "Qaytish-almashtirish",
+    "news": "Yangiliklar"
   },
-  "about":{
-        
+  "about": {
+    "xurshidbek_nav1": "Mahsulot haqida"
   }
 }
