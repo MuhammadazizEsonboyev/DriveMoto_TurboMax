@@ -1,5 +1,18 @@
 {
     "text": {
-        
+        "choose":"Tilni Tanlang",
+        "Magazine":"Jurnallar",
+        "Stock":"Aktsii",
+        "Delivery" :"Yetkazish va tolov",       
+        "QuadBike":"Kvadrotsikli",
+        "Katera":"Kater",
+        "Hydrocyclically":"Gidrotsikly",
+        "Lodki":"Qayiqlar",
+        "Vezdexhody":"Vezdehody",
+        "Snegohody":"Snegohody",
+        "Engine":"Dvigatelar",
+        "SpareParts":"Zapchasti",
+        "EngineBoat":"Qayiq Motori Suzuki DF9.9BRS",
+        "promotion":"Aksiya shu  kungacha amal qiladi"
     }
 }
