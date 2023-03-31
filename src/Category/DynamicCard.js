@@ -14,7 +14,7 @@ export const carts = [
     product:"Product 1"
   },
   {
-    name: "Jet ski BRP SeaDoo GTI 155hp SE Long Blue Metallic",
+    name: "Jet ski BRP SeaDoo GTI 155hp SE Long Blue Metallic Metallic",
     img: img2,
     price: "1 100 475 ₽",
     product:"Product 2"
