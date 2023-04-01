@@ -7,7 +7,8 @@ import '../Dnavbar/Dnavbar.css'
 
 const Dnavbar = () => {
     return (
-        <div className='md:container md:mx-auto sm:truncate ' >
+        
+                        <div className='sm:flex'>
             <div className="container mx-auto px-8">
                 <container className='mr-7  ml-[70px]'>
                     <div className='flex '>
