@@ -5,15 +5,14 @@ import StarOutlineIcon from '@mui/icons-material/StarOutline';
 import qayq from '../img/qayiq.png'
 import '../Dnavbar/Dnavbar.css'
 
-
-
 const Dnavbar = () => {
     return (
-        <div className='md:container md:mx-auto sm:truncate ' >
-            <div id="container mx-auto px-4">
-                <container className='mr-17  ml-[70px]'>
-                    <div className='flex'>
+        
                         <div className='sm:flex'>
+            <div className="container mx-auto px-8">
+                <container className='mr-7  ml-[70px]'>
+                    <div className='flex '>
+                        <div className='sm:flex  '>
                             <div className='truncate '>
                                 <p className='text-[17px] w-min text-center font-[400] text-[#C4C4C4] hidden sm:flex '>Главная
                                     Гидроциклы
