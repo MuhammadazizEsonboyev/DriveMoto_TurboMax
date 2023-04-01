@@ -1,16 +1,17 @@
 import React from "react";
 import { Col, Container, NavDropdown, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import logo from "././Nav/image/лого.svg";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PersonIcon from '@mui/icons-material/Person';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import MenuIcon from '@mui/icons-material/Menu';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import './Nav/NavbarPage.css'
-import i18next from "i18next";
 import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
+import logo from "././Nav/image/лого.svg";
+import './Nav/NavbarPage.css'
+import {products} from "../_utils/Constants"
 
 export default function MainNav({ size }) {
   const { t } = useTranslation()
@@ -19,17 +20,8 @@ export default function MainNav({ size }) {
     i18next.changeLanguage(value)
   }
 
+  
 
-  const products = [
-    { name: `${t("text.QuadBike")}`, search: "Поиск по  номеру", },
-    { name: `${t("text.Katera")}`, search: "Поиск по марке", to: "/category" },
-    { name: `${t("text.Hydrocyclically")}`, search: "Поиск по названию товара", to: "/about" },
-    { name: `${t("text.Lodki")}`, search: "Поиск по рейтингу", to: "/home" },
-    { name: `${t("text.Vezdexhody")}`, search: "" },
-    { name: `${t("text.Snegohody")}`, search: "" },
-    { name: `${t("text.Engine")}`, search: "" },
-    { name: `${t("text.SpareParts")}`, search: "" },
-  ]
   return (
     <div>
       <Container>
@@ -42,8 +34,8 @@ export default function MainNav({ size }) {
                   <div className='mt-4 flex '>
                     <div className="sm:hidden ">
                       <div className="flex">
-                        <div class="dropdown">
-                          <button class="dropbtn ">
+                        <div className="dropdown">
+                          <button className="dropbtn ">
                             <MenuIcon className='hidden mr-12 ' />
                           </button>
                           <div class="dropdown-content">
@@ -100,10 +92,10 @@ export default function MainNav({ size }) {
             <div id="nav-category-box">
               <Col xs={6} lg={12} className='d-block d-sm-block mt-2' >
                 <div id="category-box">
-                  {products.map((item) => {
+                  {products.map((item,i) => {
                     return (
-                      <Link id="category-link" to={item.to}>
-                        <button id="category-name">{item.name}</button>
+                      <Link key={i} id="category-link" to={item.to}>
+                        <button id="category-name">{t(item.name)}</button>
                       </Link>
                     );
                   })}

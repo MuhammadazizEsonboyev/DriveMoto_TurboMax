@@ -7,9 +7,10 @@ import RubleSec from "./image/icons8-рубль-50 (1).svg";
 import { motion } from "framer-motion";
 import engine from "./image/engine.svg";
 import { useTranslation } from "react-i18next";
+import { corusel } from "../../_utils/Constants";
 
 
-export default function NavbarPage({size}) {
+export default function NavbarPage() {
   const { t } = useTranslation()
   return (
     <div>
@@ -18,50 +19,21 @@ export default function NavbarPage({size}) {
           <Row>
             <Col xs={12} lg={9} className='d-none d-sm-block'>
               <Carousel>
-                <Carousel.Item interval={3000}>
-                  <img
-                    className="d-block img-carousel"
-                    src="https://thumbs.dreamstime.com/b/two-atv-riders-speed-race-forest-front-view-helmets-riding-quad-bike-extreme-sport-travelling-quadbike-offroad-adventure-129263028.jpg"
-                    alt="First slide"
-                  />
-                  <Carousel.Caption></Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item interval={3000}>
-                  <img
-                    className="d-block img-carousel"
-                    src="https://thumbs.dreamstime.com/b/atv-woods-racing-15759004.jpg"
-                    alt="Second slide"
-                  />
-                  <Carousel.Caption></Carousel.Caption>
-                </Carousel.Item>
+                {corusel.map((item, id) => {
+                  return (
+                    <Carousel.Item key={id} interval={3000}>
+                      <img
+                        className="d-block img-carousel"
+                        src={item.img}
+                        alt="First slide"
+                      />
+                      <Carousel.Caption></Carousel.Caption>
+                    </Carousel.Item>
+                  )
+                })}
 
-                <Carousel.Item>
-                  <img
-                    className="d-block img-carousel"
-                    src="https://thumbs.dreamstime.com/b/atv-grassy-sand-dune-27806819.jpg"
-                    alt="Third slide"
-                  />
-                  <Carousel.Caption></Carousel.Caption>
-                </Carousel.Item>
-
-                <Carousel.Item>
-                  <img
-                    className="d-block img-carousel"
-                    src="https://thumbs.dreamstime.com/b/action-shot-sport-atv-vehicle-running-mud-track-98196655.jpg"
-                    alt="Third slide"
-                  />
-                  <Carousel.Caption></Carousel.Caption>
-                </Carousel.Item>
-
-                <Carousel.Item>
-                  <img
-                    className="d-block img-carousel"
-                    src="https://thumbs.dreamstime.com/b/summer-offroad-adventure-atv-sand-quarry-male-rider-helmet-quad-bike-sandpit-129262519.jpg"
-                    alt="Third slide"
-                  />
-                  <Carousel.Caption></Carousel.Caption>
-                </Carousel.Item>
               </Carousel>
+             
             </Col>
 
 

@@ -35,31 +35,41 @@ const Section2 = ({ handleClick }) => {
 
       <Container>
         <Row>
-          <Col xs={8}>
-            <h2 className="textFooter">С этим товаром покупают</h2>
-            <ul className="list_footer">
-              <li className="list_item_footer">запчасти</li>
-              <li className="list_item_footer">моторы</li>
-              <li className="list_item_footer">шины </li>
-              <li className="list_item_footer">электроника</li>
-              <li className="list_item_footer">инструменты</li>
-              <li className="list_item_footer">аксессуары</li>
+       
+
+          <Col xs={8}  className=' d-none d-sm-block'>
+            <h2 className='textFooter'>С этим товаром покупают</h2>
+            <ul className='list_footer'>
+              <li className='list_item_footer'>запчасти</li>
+              <li className='list_item_footer'>моторы</li>
+              <li className='list_item_footer'>шины </li>
+              <li className='list_item_footer'>электроника</li>
+              <li className='list_item_footer'>инструменты</li>
+              <li className='list_item_footer'>аксессуары</li>
+            </ul>
+          </Col>
+          <Col xs={8} lg={3} className=' d-block d-sm-none'>
+            <h2 className='textFooter'>С этим товаром покупают</h2>
+            <ul className='list_footer'>
+              <li className='list_item_footer'>запчасти</li>
+              <li className='list_item_footer'>моторы</li>
+              <li className='list_item_footer'>электроника</li>
+            
             </ul>
           </Col>
         </Row>
       </Container>
       <Container>
-      <Row className='justify-content-center'>
-      {CardList?.map(item => {
+      <Row className='justify-content-'>
+      {CardList?.map((item, id) => {
         // console.log(item);
         return (
-          <>
+        
            
-                <Col xs={3}>
+                <Col key={id} xs={12} lg={3} className=' d-block d-sm-block'>
                   <Cards item={{item}} key={item.id} handleClick={handleClick} />
                 </Col>
               
-          </>
         )
       })}
        
