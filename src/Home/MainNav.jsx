@@ -23,12 +23,12 @@ export default function MainNav({ size }) {
   
 
   return (
-    <div>
+    <div className="">
       <Container>
         <Row>
 
-          <div>
-            <nav >
+          <div className="">
+            <nav className="" >
               <div className="'hidden ml-4">
                 <div className="flex gap-[18px]">
                   <div className='mt-4 flex '>
@@ -38,7 +38,7 @@ export default function MainNav({ size }) {
                           <button className="dropbtn ">
                             <MenuIcon className='hidden mr-12 ' />
                           </button>
-                          <div class="dropdown-content">
+                          <div className="dropdown-content">
                             <a href="*"><PersonIcon />   Войти</a>
                             <a href="*"><LocationOnIcon />  Регистрация</a>
                             <a href="*"><FavoriteBorderIcon />  Избранное</a>

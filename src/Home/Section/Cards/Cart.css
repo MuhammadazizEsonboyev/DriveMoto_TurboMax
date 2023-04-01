@@ -21,10 +21,11 @@ article{
 .cart_box{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
+    justify-content: space-around;
+    margin-top: 40px;
     border-bottom: 2px solid skyblue;
     padding-bottom: 5px;
+    width: 100%;
 }
 .cart_box div:nth-child(2) button{
     padding: 5px 10px;
@@ -72,6 +73,12 @@ article{
     border-radius: 5px;
     background-color: wheat;
     padding: 5px
+}
+
+.buuton{
+    display: flex;
+    margin: auto;
+
 }
 
 @media (max-width: 575px){

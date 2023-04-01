@@ -27,7 +27,32 @@ const Cart = ({ cart, setCart, handleChange }) => {
         <>
             <Container>
                 <Row className='justify-content-center'>
-                    <Col xs={8} lg={3} className='d-block d-sm-block'>
+                <Col xs={8} className='d-none d-sm-block'>
+                        {cart?.map((item) => (
+                            <div className="cart_box" key={item?.id}>
+                                <div className="cart_img">
+                                    <img src={item?.img} alt="aa" />
+                                    <p>{item?.title}</p>
+                                </div>
+                                <div className='buuton'>
+                                    <button onClick={() => handleChange(item, 1)} style={{ border: "none", borderRadius: "5px", backgroundColor: "wheat" }}>+</button>
+                                    <button style={{ border: "none", borderRadius: "5px", backgroundColor: "wheat" }}>{item?.amount}</button>
+                                    <button onClick={() => handleChange(item, -1)} style={{ border: "none", borderRadius: "5px", backgroundColor: "wheat" }}>-</button>
+                                </div>
+                                <div className='priceDiv'>
+                                    Price: <span>{item?.price}</span>
+                                </div>
+                                <button className="btn_remove" onClick={() => handleRemove(item?.id)} style={{ border: "none", borderRadius: "5px", backgroundColor: "wheat", padding: " 7px" }}>Remove</button>
+
+                            </div>
+                        ))}
+                        <div className="total">
+                            <span>Total Price of your Cart </span>
+                            <span>Rs - {price}</span>
+                        </div>
+                    </Col>
+                   
+                    <Col xs={12} lg={3} className='d-block d-sm-none'>
                         {cart?.map((item) => (
                             <div className="cart_box" key={item?.id}>
                                 <div className="cart_img">
