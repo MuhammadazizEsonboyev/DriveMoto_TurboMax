@@ -12,10 +12,10 @@ export default function AppOne({cart, setCart, handleChange, handleClick}) {
     <>
     <NavbarPage />
     <Header/>
-    <Bfooter/>
     <Section1 handleClick = {handleClick}/>
     <Section2 handleClick = {handleClick}/>
     <FooterPage/>
+    <Bfooter/>
     </>
   )
 }
