@@ -4,6 +4,7 @@ import Cards from './Cards/Cards'
 import CardData from './Cards/CardNames'
 
 const Section1 = ({ handleClick }) => {
+  
   return (
     <>
       <Container>

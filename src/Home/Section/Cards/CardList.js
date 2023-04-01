@@ -1,5 +1,5 @@
-
 const CardList = [
+
   {
     id: 5,
     title: ' BRP Audio-портативная система',
