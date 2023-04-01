@@ -2,15 +2,16 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import Cards from './Cards/Cards'
 import CardList from './Cards/CardList'
+import './Section2.css'
 // import Bfooter from '../../About/Bfooter/Bfooter'
-const motor1 = require("../Footer/img/motor1.png")
-const motor2 = require("../Footer/img/motor2.png")
+// const motor1 = require("../Footer/img/motor1.png")
+// const motor2 = require("../Footer/img/motor2.png")
 
 
 const Section2 = ({ handleClick }) => {
   return (
     <>
-      <Container>
+      {/* <Container>
         <Row>
           <Col xs={12} lg={12} className='d-block d-sm-block'>
             <div className="boxBlue">
@@ -30,7 +31,7 @@ const Section2 = ({ handleClick }) => {
 
           </Col>
         </Row>
-      </Container>
+      </Container> */}
 
 
       <Container>
