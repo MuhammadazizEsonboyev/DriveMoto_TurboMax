@@ -11,9 +11,9 @@ export default function Xheader() {
   const data = [
     {
       id: 1,
-      name: "Москва, ул.  Южная 134",
-      vaqt: "пн-сб:   08:00-19:00",
-      bil: "В наличии",
+      name: `${t("about.xurshidbek_name")}`,
+      vaqt: `пн  сб 08:00-19:00`,
+      bil: `${t("about.xurshidbek_bil")}`,
       raqam: 1,
     },
     // {
@@ -53,24 +53,24 @@ console.log(get);
                       <Nav.Link className="xurshidbek_nav_1">{t("about.xurshidbek_nav1")}</Nav.Link>
                     </Col>
                     <Col md={2} xs={12}>
-                      <Nav.Link>Характеристики</Nav.Link>
+                      <Nav.Link>{t("about.xurshidbek_nav2")}</Nav.Link>
                     </Col>
                     <Col md={1} xs={12}>
-                      <Nav.Link>Отзывы</Nav.Link>
+                      <Nav.Link>{t("about.xurshidbek_nav3")}</Nav.Link>
                     </Col>
                     <Col md={1} xs={12}>
-                      <Nav.Link>Самовывоз</Nav.Link>
-                    </Col>
-
-                    <Col md={1} xs={12}>
-                      <Nav.Link>Доставка</Nav.Link>
-                    </Col>
-                    <Col md={1} xs={12}>
-                      <Nav.Link>Cервис</Nav.Link>
+                      <Nav.Link>{t("about.xurshidbek_nav4")}</Nav.Link>
                     </Col>
 
                     <Col md={1} xs={12}>
-                      <Nav.Link>Гарантия</Nav.Link>
+                      <Nav.Link>{t("about.xurshidbek_nav5")}</Nav.Link>
+                    </Col>
+                    <Col md={1} xs={12}>
+                      <Nav.Link>{t("about.xurshidbek_nav6")}</Nav.Link>
+                    </Col>
+
+                    <Col md={1} xs={12}>
+                      <Nav.Link>{t("about.xurshidbek_nav7")}</Nav.Link>
                     </Col>
                   </Container>
                 </Navbar>
@@ -80,7 +80,7 @@ console.log(get);
           <Row>
             <Col xs={6}>
               <div className="xurshid_input">
-                <h6 className="xurshid_h6">Магазин</h6>
+                <h6 className="xurshid_h6">{t("about.xurshidbek_shop")}</h6>
 
 
                 <div className="text-end">
@@ -88,7 +88,7 @@ console.log(get);
                   onChange={(e) => setGet(e.target.value)}
                     type="text"
                     className="xurshid_input_input"
-                    placeholder="Введите название магазина"
+                    placeholder={t("about.xurshidbek_input")}
                   />
                 </div>
               </div>
@@ -96,29 +96,29 @@ console.log(get);
             <Col xs={2}>
               <div className="div_xurshid_1">
                 <input type="radio" name="b" />
-                <h6 className="xurshid1_h6">Забрать сегодня</h6>
+                <h6 className="xurshid1_h6">{t("about.xurshidbek_checked")}</h6>
               </div>
             </Col>
             <Col xs={3}>
               <div className="div_xurshid_2">
                 <input type="radio" name="b" />
-                <h6 className="xurshid2_h6">Забрать в течение недели</h6>
+                <h6 className="xurshid2_h6">{t("about.xurshidbek_checked1")}</h6>
               </div>
             </Col>
           </Row>
           <Row className="mt-5">
             <div className="xurshid_section">
               <Col md={3}>
-                <h5 className="adres">Адрес</h5>
+                <h5 className="adres">{t("about.xurshidbek_manzil")}</h5>
               </Col>
               <Col md={3} xs={12}>
-                <h5>Режим работы</h5>
+                <h5>{t("about.xurshidbek_ish_tartibi")}</h5>
               </Col>
               <Col md={2} xs={12}>
-                <h5>Доступно</h5>
+                <h5>{t("about.xurshidbek_mavjud")}</h5>
               </Col>
               <Col md={2} xs={12}>
-                <h5 xs={12}>Количество</h5>
+                <h5 xs={12}>{t("about.xurshidbek_miqdor")}</h5>
               </Col>
             </div>
           </Row>

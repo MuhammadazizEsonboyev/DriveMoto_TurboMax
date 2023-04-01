@@ -53,7 +53,28 @@
 
     },
     "about":{
-        "xurshidbek_nav1":"О товаре"
+        "xurshidbek_nav1":"О товаре",
+        "xurshidbek_nav2":"Характеристики",
+        "xurshidbek_nav3":"Отзывы",
+        "xurshidbek_nav4":"Самовывоз",
+        "xurshidbek_nav5":"Доставка",
+        "xurshidbek_nav6":"Cервис",
+        "xurshidbek_nav7":"Гарантия",
+        "xurshidbek_shop":"Магазин",
+        "xurshidbek_input":"Введите название магазина",
+        "xurshidbek_checked":"Забрать сегодня",
+        "xurshidbek_checked1":"Забрать в течение недели",
+        "xurshidbek_manzil":"Адрес",
+        "xurshidbek_ish_tartibi":"Режим работы",
+        "xurshidbek_mavjud":"Доступно",
+        "xurshidbek_miqdor":"Количество",
+        "xurshidbek_name":"Москва, ул.  Южная 134",
+       
+        "xurshidbek_bil":"В наличии"
+
+
+
+
 
     }
         
