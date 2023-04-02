@@ -193,7 +193,7 @@ const Bnavbar = () => {
               <h5 className='holtib'>{t("category.footersearch")}</h5>
                 <input placeholder={t("category.email")} type='text' className='footinb'/>
                 <button className='butfotb'>{t("category.send")}</button>
-            </Col>
+            </Col> 
             <Col xs={3}> 
               <ul className='list_itmftb'>
                 <li id='infob'>{t("category.inform")} </li>
