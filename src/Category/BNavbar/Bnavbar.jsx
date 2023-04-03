@@ -219,6 +219,7 @@ const Bnavbar = () => {
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-youtube"></i>
                 </div>
+                
             </Col>
           </Row>
         </Container>
