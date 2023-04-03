@@ -39,7 +39,7 @@ const Dnavbar = () => {
                                 </div>
                                 <img className='sm:w-[580px] w-[260px] ' src={qayq} alt="" />
                                 <div className="text-center ">
-                                    <h2 className='mb-2 text-[20px] text-slate-300 line-through md:w-10 mr-[60px] '>1 200 475 ₽</h2>
+                                    <h2 className='mb-2 text-[20px] text-slate-300 line-through md:w-10 sm:ml-[220px] mr-[60px] '>1 200 475 ₽</h2>
                                     <h2 className='text-black ml-[-60px] font-[700] text-[30px]'>1 100 475 ₽</h2>
                                     <p className='ml-[-10px] w-[100%] text-center  '>Нашли дешевле? Снизим цену!</p>
                                 </div>
