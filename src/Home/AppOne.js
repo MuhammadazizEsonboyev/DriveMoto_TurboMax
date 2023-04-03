@@ -11,11 +11,10 @@ export default function AppOne({handleClick}) {
   return (
     <>
     <NavbarPage />
-
-    <Bfooter/>
+    <Header/>
     <Section1 handleClick = {handleClick}/>
     <Section2 handleClick = {handleClick}/>
-    <Header/>
+    <Bfooter/>
     </>
   )
 }
