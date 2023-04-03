@@ -84,10 +84,10 @@ export default function MainNav({ size }) {
                   <div className='ml-7'>
                     <div className='flex'>
                       <div className="flex ml-[0px] mt-[35px]">
-                        <FavoriteBorderIcon className='ml-3 hover:text-[#f44336]' />
-                        <PersonIcon className='ml-3 hover:text-[#f44336]' />
+                        <FavoriteBorderIcon className='ml-0 hover:text-[#f44336]' />
+                        <PersonIcon className='ml-1 hover:text-[#f44336]' />
                         <Link to="/cart">
-                          <ShoppingCartIcon className='ml-3 hover:text-[#f44336]' />
+                          <ShoppingCartIcon className='ml-1 hover:text-[#f44336]' />
                           <span>{size}</span>
                         </Link>
                       </div>

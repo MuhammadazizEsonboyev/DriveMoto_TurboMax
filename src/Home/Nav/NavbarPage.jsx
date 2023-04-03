@@ -146,7 +146,6 @@ export default function NavbarPage({size}) {
                 <h1 id="engine-info">
                   {t("text.EngineBoat")}
                 </h1>
-
                 <div id="date-box">
                   <h2 id="date-till">{t("text.promotion")}</h2>
                   <h1 id="date">31.08.2020</h1>
