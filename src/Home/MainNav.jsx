@@ -30,7 +30,7 @@ export default function MainNav({ size }) {
           <div className="">
             <nav className="" >
               <div className="'hidden ml-4">
-                <div className="flex gap-[18px]">
+                <div className="flex gap-[15px]">
                   <div className='mt-4 flex '>
                     <div className="sm:hidden ">
                       <div className="flex">
