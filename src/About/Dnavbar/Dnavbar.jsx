@@ -19,12 +19,12 @@ const Dnavbar = () => {
                                     Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic
                                 </p>
                                 <button className='border-white h-[50px] w-[150px] bg-[#1C62CD] text-white rounded-sm mt-[40px] hidden sm:block'>SALE</button>
-                                <p className=' flex sm:hidden text-[17px] w-full ml-[30px] text-center font-[400] text-[#C4C4C4] '>Главная
+                                <p className=' flex sm:hidden text-[17px] w-full  text-center font-[400] text-[#C4C4C4] '>Главная
                                     Гидроциклы
                                     Гидроцикл BRP <br /> SeaDoo GTI 155hp SE <br /> Long Blue Metallic
                                 </p>
                                 <div className="sm:hidden  ">
-                                    <h2 className='mb-[10px] mt-[29px] text-[20px] font-[700] w-[100%] text-center '>Гидроцикл BRP SeaDoo GTI 155hp SE <br /> Long Blue Metallic</h2>
+                                    <h2 className='mb-[10px] mt-[29px] text-[20px] font-[700] w-[40%] text-center ml-[9px] '>Гидроцикл BRP SeaDoo GTI <br /> 155hp SE  Long Blue Metallic</h2>
                                     <p className=' mt-10 text-[#2F3035] opacity-50 ml-4 w-10/12  '>Код товара:   366666-2 </p>
                                     <div className="flex gap-4 mt-3 mb-6 ml-3">
                                         <FavoriteBorderIcon className='' />
@@ -38,13 +38,13 @@ const Dnavbar = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <img className='sm:w-[580px] w-[360px] ' src={qayq} alt="" />
+                                <img className='sm:w-[580px] w-[260px] ' src={qayq} alt="" />
                                 <div className="text-center ">
-                                    <h2 className='mb-2  text-[20px] text-slate-300 line-through md:w-80 sm:ml-[70px] '>1 200 475 ₽</h2>
+                                    <h2 className='mb-2 text-[20px] text-slate-300 line-through md:w-10 mr-[60px] '>1 200 475 ₽</h2>
                                     <h2 className='text-black ml-[-60px] font-[700] text-[30px]'>1 100 475 ₽</h2>
-                                    <p className=' sm:ml-[70px] w-80 text-center  '>Нашли дешевле? Снизим цену!</p>
+                                    <p className='ml-[-10px] w-[100%] text-center  '>Нашли дешевле? Снизим цену!</p>
                                 </div>
-                                <button className='border-white w-[340px] ml-5 bg-[#1C62CD] text-white md:hidden  block rounded-sm mt-[29px] '>купить</button>
+                                <button className='border-white w-[310px] bg-[#1C62CD] text-white md:hidden  block rounded-sm mt-[29px] '>купить</button>
                             </div>
                             <div className='hidden md:block sm:ml-[124px]'>
                                 <h2 className='mb-[10px] mt-[75px] text-[30px] font-[700] '>Гидроцикл BRP SeaDoo GTI 155hp SE <br /> Long Blue Metallic</h2>
