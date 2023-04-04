@@ -30,7 +30,7 @@ export default function MainNav({ size }) {
           <div className="">
             <nav className="" >
               <div className="'hidden ml-4">
-                <div className="flex gap-[18px]">
+                <div className="flex gap-[15px]">
                   <div className='mt-4 flex '>
                     <div className="sm:hidden ">
                       <div className="flex">
@@ -75,12 +75,12 @@ export default function MainNav({ size }) {
                   </div>
                   <div className='ml-7'>
                     <div className='flex'>
-                      <div className="flex ml-[0px] mt-[35px]">
-                        <FavoriteBorderIcon className='ml-3 hover:text-[#f44336]' />
-                        <PersonIcon className='ml-3 hover:text-[#f44336]' />
+                      <div className="flex ml-[0px] mt-[35px] sm:mt-[27px]">
+                        <FavoriteBorderIcon className='ml-0 hover:text-[#f44336]' />
+                        <PersonIcon className='ml-1 hover:text-[#f44336]' />
                         <Link to="/cart">
-                          <ShoppingCartIcon className='ml-3 hover:text-[#f44336]' />
-                          <span>{size}</span>
+                          <ShoppingCartIcon className='ml-1 hover:text-[#f44336]' />
+                          <span className="absolute ml-[-7px]  mt-[-8px]">{size}</span>
                         </Link>
                       </div>
                     </div>
