@@ -134,6 +134,7 @@ const Bnavbar = () => {
                   <>
                     <Col xs={4} className="mb-2" key={item?.id}>
                       <Card
+                      
                         className="cartCategory"
                         style={{
                           width: "25rem",
