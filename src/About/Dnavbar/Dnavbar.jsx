@@ -44,7 +44,7 @@ const Dnavbar = () => {
                                 <div className="text-center ">
                                     <h2 className='mb-2 text-[20px] text-slate-300 line-through md:w-10 sm:ml-[220px] mr-[60px] '>1 200 475 ₽</h2>
                                     <h2 className='text-black ml-[-60px] font-[700] text-[30px]'>1 100 475 ₽</h2>
-                                    <p className='ml-[-10px] w-[100%] text-center  '>Нашли дешевле? Снизим цену!</p>
+                                    <p className='ml-[-10px] w-[100%] text-center  '>{t("about.dostonbek_narx")}</p>
                                 </div>
                                 <button className='border-white w-[310px] bg-[#1C62CD] text-white md:hidden  block rounded-sm mt-[29px] '>купить</button>
                             </div>
@@ -63,8 +63,8 @@ const Dnavbar = () => {
                                     </div>
                                 </div                                                                                                                                                                                                                                                                                                                                                                                                                                    >
                                 <div className="flex gap-16">
-                                    <h4 className='text-black text-[23px] font-[700]'>Характеристики</h4>
-                                    <h4 className='text-[#2F3035] text-[23px] opacity-50 mb-4'>Наличие в магазине</h4>
+                                    <h4 className='text-black text-[23px] font-[700]'>{t("about.dostonbek_bosh_ul")}</h4>
+                                    <h4 className='text-[#2F3035] text-[23px] opacity-50 mb-4'>{t("about.dostonbek_bosh_ul_2")}</h4>
                                 </div>
                                 <div className="flex gap-14">
                                     <div className="stateName">
