@@ -4,8 +4,10 @@ import BarChartIcon from '@mui/icons-material/BarChart';
 import StarOutlineIcon from '@mui/icons-material/StarOutline';
 import qayq from '../img/qayiq.png'
 import '../Dnavbar/Dnavbar.css'
+import { useTranslation } from 'react-i18next';
 
 const Dnavbar = () => {
+    const { t } = useTranslation()
     return (
         
                         <div className='sm:flex'>
