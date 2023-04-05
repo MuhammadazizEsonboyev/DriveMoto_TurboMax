@@ -68,23 +68,23 @@ const Dnavbar = () => {
                                 </div>
                                 <div className="flex gap-14">
                                     <div className="stateName">
-                                        <h6 className='mb-2'>Производитель</h6>
+                                        <h6 className='mb-2'>{t("about.dostonbek_li1")}</h6>
                                         <div className=''></div>
-                                        <h6 className='mb-2'>Количество мест, шт: </h6>
+                                        <h6 className='mb-2'>{t("about.dostonbek_li2")} </h6>
                                         <div className='chiziq'></div>
-                                        <h6 className='mb-2'>Мощность, л.с.</h6>
+                                        <h6 className='mb-2'>{t("about.dostonbek_li3")}</h6>
                                         <div className='chiziq'></div>
-                                        <h6 className='mb-2'>Тип двигателя</h6>
+                                        <h6 className='mb-2'>{t("about.dostonbek_li4")}</h6>
                                         <div className='chiziq'></div>
-                                        <h6 className='mb-2'>Год выпуска</h6>
+                                        <h6 className='mb-2'>{t("about.dostonbek_li5")}</h6>
                                         <div className='chiziq'></div>
-                                        <h6 className=' mt-6  text-[blue] text-[18px] underline-offset-5'>Показать еще</h6>
+                                        <h6 className=' mt-6  text-[blue] text-[18px] underline-offset-5'>{t("about.dostonbek_hover")}</h6>
                                     </div>
                                     <div className="stateAge">
-                                        <h6 className='mb-2'>Канада</h6>
+                                        <h6 className='mb-2'>{t("about.dostonbek_li_1")}</h6>
                                         <h6 className='mb-2'>3 </h6>
                                         <h6 className='mb-2'>155</h6>
-                                        <h6 className='mb-2'>Бензиновый</h6>
+                                        <h6 className='mb-2'>{t("about.dostonbek_li_2")}</h6>
                                         <h6 className='mb-2'>  2018</h6>
                                     </div>
                                 </div>
