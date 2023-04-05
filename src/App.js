@@ -16,6 +16,7 @@ function App() {
     setCart([...cart, item])
     // console.log(cart);
     // console.log(item);
+    
   }
   const handleChange = (item, d) => {
     const indx = cart.indexOf(item)
