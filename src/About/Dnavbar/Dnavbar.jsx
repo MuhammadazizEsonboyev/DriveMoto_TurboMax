@@ -4,8 +4,10 @@ import BarChartIcon from '@mui/icons-material/BarChart';
 import StarOutlineIcon from '@mui/icons-material/StarOutline';
 import qayq from '../img/qayiq.png'
 import '../Dnavbar/Dnavbar.css'
+import { useTranslation } from 'react-i18next';
 
 const Dnavbar = () => {
+    const { t } = useTranslation()
     return (
         
                         <div className='sm:flex'>
@@ -42,7 +44,7 @@ const Dnavbar = () => {
                                 <div className="text-center ">
                                     <h2 className='mb-2 text-[20px] text-slate-300 line-through md:w-10 sm:ml-[220px] mr-[60px] '>1 200 475 ₽</h2>
                                     <h2 className='text-black ml-[-60px] font-[700] text-[30px]'>1 100 475 ₽</h2>
-                                    <p className='ml-[-10px] w-[100%] text-center  '>Нашли дешевле? Снизим цену!</p>
+                                    <p className='ml-[-10px] w-[100%] text-center  '>{t("about.dostonbek_narx")}</p>
                                 </div>
                                 <button className='border-white w-[310px] bg-[#1C62CD] text-white md:hidden  block rounded-sm mt-[29px] '>купить</button>
                             </div>
@@ -61,28 +63,28 @@ const Dnavbar = () => {
                                     </div>
                                 </div                                                                                                                                                                                                                                                                                                                                                                                                                                    >
                                 <div className="flex gap-16">
-                                    <h4 className='text-black text-[23px] font-[700]'>Характеристики</h4>
-                                    <h4 className='text-[#2F3035] text-[23px] opacity-50 mb-4'>Наличие в магазине</h4>
+                                    <h4 className='text-black text-[23px] font-[700]'>{t("about.dostonbek_bosh_ul")}</h4>
+                                    <h4 className='text-[#2F3035] text-[23px] opacity-50 mb-4'>{t("about.dostonbek_bosh_ul_2")}</h4>
                                 </div>
                                 <div className="flex gap-14">
                                     <div className="stateName">
-                                        <h6 className='mb-2'>Производитель</h6>
+                                        <h6 className='mb-2'>{t("about.dostonbek_li1")}</h6>
                                         <div className=''></div>
-                                        <h6 className='mb-2'>Количество мест, шт: </h6>
+                                        <h6 className='mb-2'>{t("about.dostonbek_li2")} </h6>
                                         <div className='chiziq'></div>
-                                        <h6 className='mb-2'>Мощность, л.с.</h6>
+                                        <h6 className='mb-2'>{t("about.dostonbek_li3")}</h6>
                                         <div className='chiziq'></div>
-                                        <h6 className='mb-2'>Тип двигателя</h6>
+                                        <h6 className='mb-2'>{t("about.dostonbek_li4")}</h6>
                                         <div className='chiziq'></div>
-                                        <h6 className='mb-2'>Год выпуска</h6>
+                                        <h6 className='mb-2'>{t("about.dostonbek_li5")}</h6>
                                         <div className='chiziq'></div>
-                                        <h6 className=' mt-6  text-[blue] text-[18px] underline-offset-5'>Показать еще</h6>
+                                        <h6 className=' mt-6  text-[blue] text-[18px] underline-offset-5'>{t("about.dostonbek_hover")}</h6>
                                     </div>
                                     <div className="stateAge">
-                                        <h6 className='mb-2'>Канада</h6>
+                                        <h6 className='mb-2'>{t("about.dostonbek_li_1")}</h6>
                                         <h6 className='mb-2'>3 </h6>
                                         <h6 className='mb-2'>155</h6>
-                                        <h6 className='mb-2'>Бензиновый</h6>
+                                        <h6 className='mb-2'>{t("about.dostonbek_li_2")}</h6>
                                         <h6 className='mb-2'>  2018</h6>
                                     </div>
                                 </div>

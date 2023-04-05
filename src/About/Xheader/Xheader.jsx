@@ -6,7 +6,7 @@ import "./Xheader.css";
 import { useTranslation } from "react-i18next";
 
 export default function Xheader() {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   const data = [
     {
@@ -38,8 +38,8 @@ export default function Xheader() {
     //   raqam: 0,
     // },
   ];
-const [get, setGet] = useState('')
-console.log(get);
+  const [get, setGet] = useState("");
+  console.log(get);
   return (
     <>
       <section className="xurshid">
@@ -50,7 +50,9 @@ console.log(get);
                 <Navbar className="xurshid_nav">
                   <Container>
                     <Col md={2} xs={12}>
-                      <Nav.Link className="xurshidbek_nav_1">{t("about.xurshidbek_nav1")}</Nav.Link>
+                      <Nav.Link className="xurshidbek_nav_1">
+                        {t("about.xurshidbek_nav1")}
+                      </Nav.Link>
                     </Col>
                     <Col md={2} xs={12}>
                       <Nav.Link>{t("about.xurshidbek_nav2")}</Nav.Link>
@@ -82,10 +84,9 @@ console.log(get);
               <div className="xurshid_input">
                 <h6 className="xurshid_h6">{t("about.xurshidbek_shop")}</h6>
 
-
                 <div className="text-end">
                   <input
-                  onChange={(e) => setGet(e.target.value)}
+                    onChange={(e) => setGet(e.target.value)}
                     type="text"
                     className="xurshid_input_input"
                     placeholder={t("about.xurshidbek_input")}
@@ -102,7 +103,9 @@ console.log(get);
             <Col xs={3}>
               <div className="div_xurshid_2">
                 <input type="radio" name="b" />
-                <h6 className="xurshid2_h6">{t("about.xurshidbek_checked1")}</h6>
+                <h6 className="xurshid2_h6">
+                  {t("about.xurshidbek_checked1")}
+                </h6>
               </div>
             </Col>
           </Row>
@@ -123,32 +126,36 @@ console.log(get);
             </div>
           </Row>
           <Row className="mt-5">
-            {data.filter((item) => {
-              return get.toLowerCase() === '' ? item : item.name.toLowerCase( ).includes(get)
-            }).map(({ name, vaqt, bil, raqam }) => (
-              <>
-                <div className="xurshidbek_div">
-                  <Col md={3} xs={12}>
-                    <h5 className="xurshid_section1">{name}</h5>
-                  </Col>
-                  <Col md={3} xs={12}>
-                    <h5 className="xurshid_section1">{vaqt}</h5>
-                  </Col>
-                  <Col md={2} xs={12}>
-                    <h5 className="xurshid_section1">{bil}</h5>
-                  </Col>
-                  <Col md={3} xs={12}>
-                    <h5 className="xurshid_section1">{raqam}</h5>
-                  </Col>
+            {data
+              .filter((item) => {
+                return get.toLowerCase() === ""
+                  ? item
+                  : item.name.toLowerCase().includes(get);
+              })
+              .map(({ name, vaqt, bil, raqam }) => (
+                <>
+                  <div className="xurshidbek_div">
+                    <Col md={3} xs={12}>
+                      <h5 className="xurshid_section1">{name}</h5>
+                    </Col>
+                    <Col md={3} xs={12}>
+                      <h5 className="xurshid_section1">{vaqt}</h5>
+                    </Col>
+                    <Col md={2} xs={12}>
+                      <h5 className="xurshid_section1">{bil}</h5>
+                    </Col>
+                    <Col md={3} xs={12}>
+                      <h5 className="xurshid_section1">{raqam}</h5>
+                    </Col>
 
-                  <Col md={1} xs={12}>
-                    <Button variant="primary" className="xurshidbek_button">
-                      КУПИТЬ
-                    </Button>
-                  </Col>
-                </div>
-              </>
-            ))}
+                    <Col md={1} xs={12}>
+                      <Button variant="primary" className="xurshidbek_button">
+                        КУПИТЬ
+                      </Button>
+                    </Col>
+                  </div>
+                </>
+              ))}
           </Row>
         </Container>
       </section>
